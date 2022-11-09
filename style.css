@@ -1,0 +1,25 @@
+body {
+    background-image: linear-gradient(to right, #ebfef7, #979edb)
+}
+
+.Btn {
+    width: 20em;
+    border: 2px solid black;
+    margin: 20px;
+    background: #ffe;
+    border-radius: 10px;
+}
+
+a {
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    color: red;
+    background: #eff;
+}
