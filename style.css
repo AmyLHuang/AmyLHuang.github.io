@@ -1,25 +1,43 @@
-body {
-    background-image: linear-gradient(to right, #ebfef7, #979edb)
+
+
+/* Add a background color to the top navigation */
+.topnav {
+    overflow: hidden;
 }
 
-.Btn {
-    width: 20em;
-    border: 2px solid black;
-    margin: 20px;
-    background: #ffe;
-    border-radius: 10px;
-}
-
-a {
-    display: block;
-    width: 100%;
-    line-height: 2em;
+/* Style the links inside the top navigation bar */
+.topnav a{
+    float: right;
+    color: black;
     text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    border-radius: 5px;
+    font-size: 16px;
 }
 
-a:hover {
+/* Add a color to the active/curret link */
+.topnav a.active {
     color: red;
-    background: #eff;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: blue;
+}
+
+.topnav a.split {
+    float: left;
+}
+
+.line {
+    height: 4px;
+}
+
+#info {
+    font-family: cursive;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
