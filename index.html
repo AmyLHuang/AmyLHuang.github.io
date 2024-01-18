@@ -2,19 +2,72 @@
     <head>
         <title> Amy Huang </title>
         <meta charset="utf-8">
-        <meta http-equiv='cache-control' content='no-cache'>
-        <meta http-equiv='expires' content='0'>
-        <meta http-equiv='pragma' content='no-cache'>
         <link rel="icon" href="images/letterA.jpg">
         <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            nav {
+                margin: 20px;
+                padding: 10px;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: black;
+                padding: 0px 15px;
+            }
+
+            nav a.active {
+                text-decoration: underline;
+            }
+
+            #content {
+                margin: 50px;
+                padding: 10px;
+            }
+
+            #introduction {
+                margin-bottom: 60px;
+            }
+
+            
+        </style>
     </head>
     <body>
-        <div class="frontpage" style="height: 100%; width: 100%;">
+        <nav style="padding: 8px;;">
+            <a href="index.html">AH</a>
+            <div style="float: right;">
+                <a class="active" href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        
+        <div id="content">
+            <div id="introduction">
+                <h1>Amy Huang.</h1>
+                <section>A dedicated programmer with a keen focus on the topics of Artificial Intelligence and Full-Stack App Development.</section>
+            </div>
+            
+
+            <h2>Current Projects</h2>
+        </div>
+        
+        
+
+        <footer></footer>
+
+
+        <!-- <div class="frontpage" style="height: 100%; width: 100%;">
             <div class="topnav">
                 <a href="contact.html">Contact</a>
                 <a href="projects.html">Projects</a>
                 <a class="active" href="index.html">Home</a>            
-                <!-- <a class="split">Amy Huang</a> -->
+                <a class="split">Amy Huang</a>
             </div>
             <div id="info">
                 <h1>Hi! I'm Amy</h1>
@@ -22,6 +75,6 @@
                 <p>a third year college student 
                 majoring in Computer Science</p>
             </div>
-        </div>
+        </div> -->
     </body>
 </html>

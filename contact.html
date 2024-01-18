@@ -1,20 +1,42 @@
 <html>
 
-    <head>
-        <title> Projects </title>
-        <meta charset="utf-8">
-        <link rel="icon" href="images/letterA.jpg">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <title> Contact </title>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/letterA.jpg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-    <body>
-        <div class="Btn">
+        nav {
+            margin: 20px;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding: 0px 15px;
+        }
+
+        nav a.active {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav style="padding: 8px;;">
+        <a href="index.html">AH</a>
+        <div style="float: right;">
             <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a class="active" href="contact.html">Contact</a>
         </div>
-        <div>
-            <!-- Github, Email, Linked in, -->
-        </div>
-
-    </body>
+    </nav>
+</body>
 
 </html>
