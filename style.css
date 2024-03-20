@@ -67,45 +67,6 @@ section {
     background-color: black;
 }
 
-@media(max-width:800px) {
-    .hamburger {
-        display: block;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-menu {
-        position: fixed;
-        left: -110%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: rgb(192, 226, 255);
-        width: 100%;
-        text-align: center;
-        padding: 0;
-        transition: 0.3s;
-    }
-
-    .nav-item {
-        margin: 20px 0;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-}
-
 .introduction {
     margin: 20px 50px;
     padding: 5px 10px;
@@ -117,7 +78,7 @@ section {
     width: 90%;
     justify-self: center;
     padding: 20px;
-    margin: 20px 50px;
+    margin: 20px 5%;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
@@ -198,4 +159,53 @@ footer {
 
 .footer-icon:hover {
     color: blue;
+}
+
+/* Responsiveness */
+@media(max-width:600px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -110%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(192, 226, 255);
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 20px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .box .row {
+        display: block;
+    }
+
+    .box .proj-logo {
+        display: block;
+        margin: auto;
+    }
 }
