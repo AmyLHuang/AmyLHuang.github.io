@@ -1,21 +1,118 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title> Projects </title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Projects </title>
     <link rel="icon" href="images/letterA.jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-
 <body>
-    <nav>
-        <a href="index.html">AH</a>
-        <div style="float: right;">
-            <a href="index.html">Home</a>
-            <a class="active" href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
-</body>
+    <header>
+        <nav>
+            <a href="index.html">A. L. Huang</a>
+            <div style="float: right;">
+                <a href="index.html">Home</a>
+                <a class="active" href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <section class="section" id="introduction">
+            <h1>Projects</h1>
+            <p>In 2020, I started my programming journey. Over the years, I have worked on projects, hoping to better hone my skills. The following projects are a combination of personal projects and school projects.</p>
+        </section>
+    </header>
 
+    <section>
+        <div class="box" style="background-image: linear-gradient(to bottom, rgb(255, 237, 203), rgb(255, 166, 166));">
+            <div class="row">
+                <img class="proj-logo" src="images/project-logos/health20_logo.png" />
+                <div>
+                    <h3>Health₂O</h3>
+                    <p>Health₂O is a wellness advisor app focused on three essential wellness categories: exercise, sleep,
+                        and hydration. Our
+                        mission is to help users lead healthier lives by providing a comprehensive solution to manage and
+                        improve these critical
+                        areas.</p>
+                    <a href="https://github.com/AmyLHuang/Health2O" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 18px;">
+                <div class="tech-box" style="align-items: center;">
+                    <img src="images/tech-stack-logos/react-native_logo.png" style="max-height: 25px; margin-right: 3px;" />
+                    <p>React Native</p>
+                </div>
+                <div class="tech-box" style="align-items: center;">
+                    <img src="images/tech-stack-logos/expo-go_logo.png" style="max-height: 25px; margin-right: 3px;" />
+                    <p>Expo Go</p>
+                </div>
+                <div class="tech-box" style="align-items: center;">
+                    <img src="images/tech-stack-logos/firebase_logo.png" style="max-height: 25px; margin-right: 3px;" />
+                    <p>Firebase</p>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="box" style="background-image: linear-gradient(to bottom, rgb(255, 246, 197), rgb(255, 218, 150));">
+            <div class="row">
+                <img class="proj-logo" src="images/project-logos/2048_logo.png" />
+                <div>
+                    <h3>2048 Clone</h3>
+                    <p>2048 is a single-player sliding tile puzzle video game written by Italian web developer Gabriele Cirulli. This is one of my first projects that I programmed. </p>
+                    <a href="code/2048.txt" target="_blank">View Source Code</a>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 18px;">
+                <div class="tech-box" style="align-items: center;">
+                    <img src="images/tech-stack-logos/python_logo.png" style="max-height: 25px; margin-right: 3px;" />
+                    <p>Python</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="box" style="background-image: linear-gradient(to bottom, rgb(226, 226, 226), rgb(181, 181, 181));">
+            <div class="row">
+                <img class="proj-logo" src="images/project-logos/minesweeper_logo.png" />
+                <div>
+                    <h3>Minesweeper-AI</h3>
+                    <p>The goal of Minesweeper-AI is to create an agent that can solve minesweeper worlds as efficiently as
+                        possible.</p>
+                    <p>The agent has 4 possible actions: 1. UNCOVER &nbsp; 2. FLAG &nbsp; 3. UNFLAG &nbsp; 4. LEAVE</p>
+                    <a href="https://github.com/AmyLHuang/Minesweeper-AI" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 18px;">
+                <div class="tech-box" style="align-items: center;">
+                    <img src="images/tech-stack-logos/python_logo.png" style="max-height: 25px; margin-right: 3px;" />
+                    <p>Python</p>
+                </div>
+                <div class="tech-box" style="align-items: center;">
+                    <img src="images/tech-stack-logos/makefile_icon.png" style="max-height: 25px; margin-right: 3px;" />
+                    <p>Makefile</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-icons">
+            <a class="footer-icon" href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square"
+                    style="font-size: 32px;"></i></a>
+            <a class="footer-icon" href="https://github.com/AmyLHuang/" target="_blank"><i class="fa fa-github-square"
+                    style="font-size: 32px;"></i></a>
+            <a class="footer-icon" href="mailto:amyhuang8119@gmail.com"><i class="material-icons"
+                    style="font-size: 36px">email</i></a>
+            <br>
+        </div>
+        <p>©AmyHuang
+            All rights reserved</p>
+    </footer>
+</body>
 </html>
