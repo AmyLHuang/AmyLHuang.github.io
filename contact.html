@@ -9,6 +9,30 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        form {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 600px;
+        }
+        input, textarea {
+            margin-bottom: 10px; 
+            padding: 5px; 
+            width: 100%;
+        }
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,9 +47,20 @@
         </nav>
         <section class="section" id="introduction">
             <h1>Contact Me</h1>
-            <p></p>
+            <p>Feel free to contact me any time with any questions.</p>
         </section>
     </header>
+
+    <h2 style="text-align: center;">Send me an Email</h2>
+    
+    <section style="margin: 5%; margin-top: 0; align-items: center;"> 
+        <form action="mailto:amyhuang8119@gmail.com" method="post" enctype="text/plain">
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <textarea id="message" name="message" placeholder="Enter your message" rows="8" cols="50" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
     <footer>
         <div class="footer-icons">
