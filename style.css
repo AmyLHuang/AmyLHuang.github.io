@@ -68,8 +68,12 @@ section {
 }
 
 .introduction {
-    margin: 20px 50px;
+    margin: 15px 50px;
     padding: 5px 10px;
+}
+
+.introduction p {
+    margin-top: 0px;
 }
 
 /* Box */
