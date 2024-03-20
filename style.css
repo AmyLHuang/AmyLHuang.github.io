@@ -1,31 +1,13 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
-    padding: 2px 0 20px 0; 
+    padding: 2px 0 6px 0; 
     background-color: aliceblue; 
     border-radius: 0 0 12% 12%;
-}
-
-nav {
-    margin: 20px;
-    padding: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    padding: 0px 15px;
-}
-
-nav a.active {
-    color: blue;
-}
-
-nav a:hover {
-    color: blue
 }
 
 section {
@@ -35,11 +17,101 @@ section {
     margin: 0 20px;
 }
 
-#introduction {
-    margin: 20px 50px;
-    padding: 20px;
-    
+/* Top Navbar */
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    margin: 18px;
 }
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 15px;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: blue;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-branding {
+    font-size: 20px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 19px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+@media(max-width:800px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -110%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(192, 226, 255);
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 20px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+.introduction {
+    margin: 20px 50px;
+    padding: 5px 10px;
+}
+
+/* Box */
 
 .box {
     width: 90%;
@@ -82,6 +154,7 @@ section {
     background-color: rgba(255, 250, 240, 0.6);;
 }
 
+/* Other */
 .divider {
     display: flex;
     font-size: 30px;
@@ -102,6 +175,8 @@ section {
     max-height: 125px;
     margin: 12px;
 }
+
+/* Footer */
 
 footer {
     margin-top: 20px;

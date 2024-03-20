@@ -11,15 +11,28 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">A. L. Huang</a>
-            <div style="float: right;">
-                <a href="index.html">Home</a>
-                <a class="active" href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
+        <nav class="navbar">
+            <a href="index.html" class="nav-branding">A. L. Huang</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="active" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
-        <section class="section" id="introduction">
+        <script src="script.js"></script>
+
+        <section class="introduction">
             <h1>Projects</h1>
             <p>In 2020, I started my programming journey. Over the years, I have worked on projects, hoping to better hone my skills. The following projects are a combination of personal projects and school projects.</p>
         </section>
@@ -63,7 +76,8 @@
                 <img class="proj-logo" src="images/project-logos/2048_logo.png" />
                 <div>
                     <h3>2048 Clone</h3>
-                    <p>2048 is a single-player sliding tile puzzle video game written by Italian web developer Gabriele Cirulli. This is one of my first projects that I programmed. </p>
+                    <p>2048 is a single-player sliding tile puzzle video game written by Italian web developer Gabriele Cirulli. This was
+                        one of my first projects. </p>
                     <a href="code/2048.txt" target="_blank">View Source Code</a>
                 </div>
             </div>

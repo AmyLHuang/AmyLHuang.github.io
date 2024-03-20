@@ -37,15 +37,27 @@
 
 <body>
     <header>
-        <nav>
-            <a href="index.html">A. L. Huang</a>
-            <div style="float: right;">
-                <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a class="active" href="contact.html">Contact</a>
+        <nav class="navbar">
+            <a href="index.html" class="nav-branding">A. L. Huang</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="active" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
-        <section class="section" id="introduction">
+        <script src="script.js"></script>
+        <section class="introduction">
             <h1>Contact Me</h1>
             <p>Feel free to contact me any time with any questions.</p>
         </section>

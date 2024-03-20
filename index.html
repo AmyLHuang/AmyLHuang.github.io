@@ -8,23 +8,38 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">A. L. Huang</a>
-            <div style="float: right;">
-                <a class="active" href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
+        <nav class="navbar">
+            <a href="index.html" class="nav-branding">A. L. Huang</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a class="active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
-        <section class="section" id="introduction">
+        <script src="script.js"></script>
+
+        <section class="introduction">
             <h1>Hello! I am Amy Huang.</h1>
             <p>A dedicated programmer with a keen focus on the topics of Artificial Intelligence and Full-Stack App Development.
             </p>
         </section>
     </header>
+    
     
     <section>
         <h2 style="text-align: center;">Featured Projects</h2>
@@ -52,7 +67,6 @@
                     <img src="images/tech-stack-logos/firebase_logo.png" style="max-height: 25px; margin-right: 3px;" />
                     <p>Firebase</p>
                 </div>
-                
             </div>
         </div>
 
