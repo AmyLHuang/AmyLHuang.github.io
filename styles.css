@@ -247,6 +247,101 @@ td {
     font-size: 12px;
 } 
 
+/* Experience */
+
+
+#experience-container {
+    font-family: "Source Sans Pro", arial, sans-serif;
+    font-weight: 300;
+    color: #333;
+    * {
+        box-sizing: border-box;
+    }
+}
+
+.timeline {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px 40px 10px 20px;
+    position: relative;
+    border: 5px solid green;
+    border-radius: 20px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: calc(33% - 2px);
+        bottom: 0px;
+        width: 4px;
+        background: black;
+    }
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.entry {
+    clear: both;
+    text-align: left;
+    position: relative;
+    padding-top: 10px;
+
+    .title {
+        margin-bottom: 0.5em;
+        float: left;
+        width: 33%;
+        padding-right: 30px;
+        text-align: right;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border: 4px solid salmon;
+            background-color: #fff;
+            border-radius: 100%;
+            top: 15%;
+            right: -8px;
+            z-index: 99;
+        }
+
+        h3, p {
+            margin: 0;
+        }
+    }
+
+    .body {
+        margin: 0 0 2em;
+        float: right;
+        width: 66%;
+        padding-left: 30px;
+
+        p {
+            &:first-child {
+                margin-top: 0;
+                font-weight: 550;
+            }
+        }
+
+        ul {
+            color: #414141;
+            padding-left: 0;
+            list-style-type: none;
+
+            li:before {
+                content: "–";
+                margin-right: 0.5em;
+            }
+        }
+    }
+}
+
 /* Responsive - when the screen is more than 800px wide */
  @media (min-width: 801px) {
     .timeline-ul {
