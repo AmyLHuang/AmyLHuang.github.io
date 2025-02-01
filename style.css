@@ -79,26 +79,24 @@ a {
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-@media (hover: hover) and (pointer: fine) {
-
-    /* Only work if using a mouse/trackpad, not touchscreen */
-    .underline:hover::before {
-        left: 0;
-        right: auto;
-        width: 100%;
-    }
+.underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
 }
 
-
 /* Profile */
-#profile, 
-#profile-card, 
-#media-icons {
-    margin-bottom: 8px;
+
+#profile-card {
+    margin: 8px 0;
 }
 
 #profile-card i::before {
     color: purple;
+}
+
+#media-icons {
+    margin-bottom: 8px;
 }
 
 #media-icons a {
@@ -455,7 +453,7 @@ td {
 }
 
 /* Responsive - when the screen is less than 800px wide */
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
     .timeline-container {
         margin: 12px 8%;
     }
@@ -543,7 +541,7 @@ td {
 
 
 /* Responsive - when the screen is less than 600px wide */
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .proj-card {
         flex-direction: column;
     }
