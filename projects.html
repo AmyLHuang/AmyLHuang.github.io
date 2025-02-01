@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Amy Huang Software Portfolio Projects">
     <link rel="icon" href="images/letterA.jpg">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Projects</title>
 </head>
@@ -16,100 +16,55 @@
         <div id="left-column" class="column">
             <div id="left-content" class="content">
                 <!-- Profile -->
-                <h1 style="margin-bottom: 8px;">Amy L Huang</h1>
-                <p style="margin-bottom: 10px;">A dedicated programmer with a keen focus on the topics of Artificial
-                    Intelligence and Full-Stack App Development.</p>
-                <i class="fa fa-map-marker" aria-hidden="true"> Buena Park, California, USA</i><br>
-                <i class="fa fa-phone" aria-hidden="true"> (714) 872-6859</i><br>
-                <i class="fa fa-envelope" aria-hidden="true" style="margin-bottom: 10px;">
-                    amyhuang8119@gmail.com</i><br>
+                <div id="profile">
+                    <h1 style="margin-bottom: 8px;">Amy L Huang</h1>
+                    <p>A dedicated programmer with a keen focus on the topics of Artificial Intelligence and Full-Stack App Development.</p>
+                </div>
+                <div id="profile-card">
+                    <i class="fa fa-map-marker"> Buena Park, California, USA</i><br>
+                    <i class="fa fa-phone"> (714) 872-6859</i><br>
+                    <i class="fa fa-envelope"> amyhuang8119@gmail.com</i><br>
+                </div>
                 <!-- Media Links -->
-                <a class="media-icon" href="https://www.linkedin.com/in/amyhuang19/" target="_blank"><i
-                        class="fa fa-linkedin-square"></i></a>
-                <a class="media-icon" href="https://github.com/AmyLHuang/" target="_blank"><i
-                        class="fa fa-github-square"></i></a>
+                <div id="media-icons">
+                    <a class="media-icon" href="https://www.linkedin.com/in/amyhuang19/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                    <a class="media-icon" href="https://github.com/AmyLHuang/" target="_blank"><i class="fa fa-github-square"></i></a>
+                </div>
             </div>
         </div>
         <div id="right-column" class="column">
             <div id="right-content" class="content">
-                <section>
-                    <div class="box" style="background-image: linear-gradient(to bottom, rgb(255, 237, 203), rgb(255, 166, 166));">
-                        <div class="row">
-                            <img class="proj-logo" src="images/project-logos/health20_logo.png" />
-                            <div>
-                                <h3>Health₂O</h3>
-                                <p>Health₂O is a wellness advisor app focused on three essential wellness categories: exercise, sleep,
-                                    and hydration. Our
-                                    mission is to help users lead healthier lives by providing a comprehensive solution to manage and
-                                    improve these critical
-                                    areas.</p>
-                                <a href="https://github.com/AmyLHuang/Health2O" target="_blank">View on GitHub</a>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-top: 18px;">
-                            <div class="tech-box" style="align-items: center;">
-                                <img src="images/tech-stack-logos/react-native_logo.png" style="max-height: 25px; margin-right: 3px;" />
-                                <p>React Native</p>
-                            </div>
-                            <div class="tech-box" style="align-items: center;">
-                                <img src="images/tech-stack-logos/expo-go_logo.png" style="max-height: 25px; margin-right: 3px;" />
-                                <p>Expo Go</p>
-                            </div>
-                            <div class="tech-box" style="align-items: center;">
-                                <img src="images/tech-stack-logos/firebase_logo.png" style="max-height: 25px; margin-right: 3px;" />
-                                <p>Firebase</p>
-                            </div>
-                
+                <div id="page-links">
+                    <a href="index.html" class="underline"><i class="fa fa-long-arrow-left"></i> Return Home</a>
+                </div>
+                <h2 style="text-align: center;"> My Projects</h2>
+                <!-- List of Projects -->
+                <div class="project">
+                    <div class="proj-card">
+                        <img src="" />
+                        <div class="proj-info">
+                            <h3>MovieShop</h3>
+                            <p>Description...</p>
+                            <!-- <a href="https://github.com/AmyLHuang/Health2O" target="_blank" class="underline">View on GitHub</a> -->
                         </div>
                     </div>
-                </section>
-                
-                <section>
-                    <div class="box" style="background-image: linear-gradient(to bottom, rgb(255, 246, 197), rgb(255, 218, 150));">
-                        <div class="row">
-                            <img class="proj-logo" src="images/project-logos/2048_logo.png" />
-                            <div>
-                                <h3>2048 Clone</h3>
-                                <p>2048 is a single-player sliding tile puzzle video game written by Italian web developer Gabriele
-                                    Cirulli. This was
-                                    one of my first projects. </p>
-                                <a href="code/2048.txt" target="_blank">View Source Code</a>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-top: 18px;">
-                            <div class="tech-box" style="align-items: center;">
-                                <img src="images/tech-stack-logos/python_logo.png" style="max-height: 25px; margin-right: 3px;" />
-                                <p>Python</p>
-                            </div>
+                    <div class="proj-tech-stack">
+                        <p>Java - MySQL - AWS - Maven - Tomcat</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="proj-card">
+                        <img src="images/project-logos/health20_logo.png" />
+                        <div class="proj-info">
+                            <h3>Health2O</h3>
+                            <p>A wellness advisor app focused on three essential wellness categories: exercise, sleep, and hydration. Our mission is to help users lead healthier lives by providing a comprehensive solution to manage and improve these critical areas.</p>
+                            <a href="https://github.com/AmyLHuang/Health2O" target="_blank" class="underline">View on GitHub</a>
                         </div>
                     </div>
-                </section>
-                
-                <section>
-                    <div class="box" style="background-image: linear-gradient(to bottom, rgb(226, 226, 226), rgb(181, 181, 181));">
-                        <div class="row">
-                            <img class="proj-logo" src="images/project-logos/minesweeper_logo.png" />
-                            <div>
-                                <h3>Minesweeper-AI</h3>
-                                <p>The goal of Minesweeper-AI is to create an agent that can solve minesweeper worlds as efficiently as
-                                    possible.</p>
-                                <p>The agent has 4 possible actions: 1. UNCOVER &nbsp; 2. FLAG &nbsp; 3. UNFLAG &nbsp; 4. LEAVE</p>
-                                <a href="https://github.com/AmyLHuang/Minesweeper-AI" target="_blank">View on GitHub</a>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-top: 18px;">
-                            <div class="tech-box" style="align-items: center;">
-                                <img src="images/tech-stack-logos/python_logo.png" style="max-height: 25px; margin-right: 3px;" />
-                                <p>Python</p>
-                            </div>
-                            <div class="tech-box" style="align-items: center;">
-                                <img src="images/tech-stack-logos/makefile_icon.png" style="max-height: 25px; margin-right: 3px;" />
-                                <p>Makefile</p>
-                            </div>
-                        </div>
+                    <div class="proj-tech-stack">
+                        <p>React Native - Firebase - MongoDB - Expo Go</p>
                     </div>
-                </section>
-                
+                </div>
                 <!-- Footer Notes -->
                 <footer id="footer-notes">Website created using HTML, CSS, and JS. <br> ©AmyHuang All rights reserved</footer>
             </div>
