@@ -1,8 +1,12 @@
 ## About
-A website I created to showcase my work. Sections include Tech Stack, Work Experience, Projects, Education, and Certificates.
+A website I created to showcase my work. Sections include Tech Stack, Work Experience, Projects, Education, and Certificates. 
 
 ## Tech Stack 
 HTML, CSS, JavaScript
+
+## Additional Features
+- Dark/Light Mode
+- Responsive
 
 ## Screenshots
 ### Home page Preview Pt.1
