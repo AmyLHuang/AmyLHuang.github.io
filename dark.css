@@ -105,3 +105,7 @@ body.dark-mode #media-icons a:hover {
 body.dark-mode .proj-card {
     background-color: aliceblue;
 }
+
+body.dark-mode .tech-box {
+    color: black;
+}
