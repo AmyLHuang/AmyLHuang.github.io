@@ -6,14 +6,19 @@
     <meta name="description" content="Amy Huang Software Portfolio Projects">
     <link rel="icon" href="images/letterA.jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Projects</title>
 </head>
-<body>
+<body class="dark-mode || light-mode">
     <div class="row">
         <!-- Left Column -->
         <div id="left-column" class="column">
             <div id="left-content" class="content">
+                <input type="checkbox" class="sr-only" id="dark-mode-toggle">
+                <label for="dark-mode-toggle" class="toggle">
+                    <span>Toggle dark mode</span>
+                </label>
                 <div id="profile">
                     <h1 style="margin-bottom: 8px;">Amy L Huang</h1>
                     <p>A dedicated programmer with a keen focus on the topics of Artificial Intelligence and Full-Stack App Development.</p>
@@ -82,5 +87,7 @@
             </div>
         </div>
     </div>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

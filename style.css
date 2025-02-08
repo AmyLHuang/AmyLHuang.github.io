@@ -18,6 +18,7 @@ section {
 
 a {
     text-decoration: none;
+    color: blue;
 }
 
 /* Layout */
@@ -112,8 +113,7 @@ a {
     color:cornflowerblue;
 }
 
- #page-links a {
-    color: black;
+#page-links a {
     font-weight: 600;
 }
 
@@ -212,8 +212,8 @@ td {
     border: 2px solid salmon;
     border-radius: 25px;
     text-decoration: none;
-    color: black;
     font-size: 12px;
+    color: black;
     cursor: pointer;
 }
 
@@ -271,6 +271,7 @@ td {
     font-size: 12pt;
     font-weight: 200;
     place-content: center;
+    align-items: center;
     position: relative;
     border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
 }
@@ -364,10 +365,6 @@ td {
     background: black;
     left: 7px;
     top: 0;
-}
-
-.work-entry {
-    color: black;
 }
 
 /* Certificate */
@@ -512,6 +509,7 @@ td {
     padding: 10px 20px;
     border-radius: 3px;
     background-color: #ececec;
+    color: black;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     justify-content: center;
     align-items: center;
