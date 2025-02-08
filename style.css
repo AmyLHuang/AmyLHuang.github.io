@@ -270,8 +270,7 @@ td {
     color: white;
     font-size: 12pt;
     font-weight: 200;
-    place-content: center;
-    align-items: center;
+    align-content: center;
     position: relative;
     border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
 }
@@ -518,7 +517,7 @@ td {
 .proj-card img {
     width: 120px;
     height: 120px;
-    border: 1px dashed gray;
+    /* border: 1px solid gray; */
 }
 
 .proj-card .proj-info {

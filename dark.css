@@ -103,9 +103,17 @@ body.dark-mode #media-icons a:hover {
 }
 
 body.dark-mode .proj-card {
-    background-color: aliceblue;
+    background-color: darkslategray;;
+}
+
+body.dark-mode .proj-card .proj-info p {
+    color: antiquewhite;
 }
 
 body.dark-mode .tech-box {
     color: black;
+}
+
+body.dark-mode .proj-tech-stack {
+    background-color: #b7b7b7;
 }
