@@ -103,7 +103,7 @@ body.dark-mode #media-icons a:hover {
 }
 
 body.dark-mode .proj-card {
-    background-color: darkslategray;;
+    background-color: midnightblue;
 }
 
 body.dark-mode .proj-card .proj-info p {
@@ -115,5 +115,5 @@ body.dark-mode .tech-box {
 }
 
 body.dark-mode .proj-tech-stack {
-    background-color: #b7b7b7;
+    background-color: #beb8e4;
 }

@@ -381,6 +381,10 @@ td {
     border-bottom: 2px solid rgba(89, 178, 250, 0.574);
 }
 
+.collapsible:focus {
+    border: 2px solid white;
+}
+
 .active,
 .collapsible:hover {
     background-color: rgb(123, 160, 255);
