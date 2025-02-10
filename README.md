@@ -22,4 +22,5 @@ HTML, CSS, JavaScript
 <img src="screenshots/home_page_mobile_1.png" alt="Screenshot of Home Page on Mobile" height="400"> <img src="screenshots/home_page_mobile_2.png" alt="Screenshot of Home Page on Mobile" height="400">
 
 ## Citations
-Education Timeline: https://codepen.io/MarkBoots/pen/OJOqNyB
+Education Timeline Design: https://codepen.io/MarkBoots/pen/OJOqNyB
+Dark/Light Mode Toggle Switch Design: https://codepen.io/justin-schroeder/pen/zYyVvxQ
