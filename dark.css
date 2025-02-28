@@ -1,5 +1,3 @@
-/* Dark Mode */
-
 body.dark-mode {
     background-color: #121212;
     color: white;
@@ -32,6 +30,12 @@ body.dark-mode #media-icons a:visited {
     color: palevioletred;
 }
 
+/* Resume Btn */
+
+body.dark-mode #resume-dl {
+    color: white;
+}
+
 /* Tech Stack */
 
 body.dark-mode .tech-box {
@@ -41,7 +45,7 @@ body.dark-mode .tech-box {
 /* Timeline */
 
 body.dark-mode .timeline-container ul li::after {
-    background: white;
+    background-color: white;
 }
 
 /* Top Project */

@@ -15,7 +15,6 @@ for (i = 0; i < coll.length; i++) {
     });
 }
 
-
 // The Dark Mode System
 
 function enableDarkMode() {
