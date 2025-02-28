@@ -16,12 +16,7 @@ section {
     margin: 12px;
 }
 
-a {
-    text-decoration: none;
-    color: blue;
-}
-
-/* Layout */
+/* Body Layout */
 .row:after {
     content: "";
     display: table;
@@ -33,19 +28,15 @@ a {
 }
 
 #left-column {
-    width: 35%;
-    position: sticky;
     top: 0;
-    background-color: rgba(240, 128, 128, 0.312);
+    position: sticky;
+    width: 35%;
     min-height: 100vh;
+    background-color: rgba(240, 128, 128, 0.312);
 }
 
 #right-column {
     width: 65%;
-}
-
-.content {
-    padding: 8% 20% 1% 20%;
 }
 
 #left-content {
@@ -57,16 +48,14 @@ a {
     padding: 6% 10% 1% 10%;
 }
 
-.section-title {
-    margin-top: 32px;
-}
-
 /* --- Components --- */
 
 /* Link Hover Underline Animation */
 
 .underline {
     position: relative;
+    color: blue;
+    text-decoration: none;
 }
 
 .underline::before {
@@ -113,12 +102,6 @@ a {
     color:cornflowerblue;
 }
 
-#page-links a {
-    font-weight: 600;
-}
-
-
-
 /* Tech Stack */
 
 #tech-container {
@@ -128,39 +111,66 @@ a {
 }
 
 .tech-box {
-    max-height: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: rgb(155, 208, 226);
+    height: 25px;
     padding: 3px 8px;
     margin: 5px;
+    gap: 2px;
     border-radius: 8px;
-    background-color: lightblue;
     font-size: small;
     font-weight: bold;
     color: black;
 }
 
-.tech-box:hover {
-    background-color: rgb(123, 202, 228);
+/* Timeline (experience & education) */
+
+.timeline-container small {
+    display: block;
+    opacity: 0.7;
 }
 
-.tech-box:visited {
-    color: black;
+.timeline-container ul li {
+    position: relative;
+    margin-left: 15px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    list-style-type: none;
 }
 
-.tech-box.tech-box-logo {
-    max-height: 2px;
-    margin-right: 3px;
+.timeline-container ul li::before,
+.timeline-container ul li::after {
+    content: "";
+    position: absolute;
 }
 
-/* Table */
+.timeline-container ul li::before {
+    width: 7px;
+    height: 7px;
+    border: 3px solid black;
+    background: var(--accent-color);
+    border-radius: 50%;
+    left: 3px;
+    z-index: 1;
+}
+
+.timeline-container ul li::after {
+    width: 3px;
+    height: 100%;
+    background: black;
+    left: 7px;
+    top: 0;
+}
+
+/* Table (top projects) */
 
 .table-container {
     max-height: 300px;
     overflow-y: auto;
     border: 1px solid #ccc;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 table {
@@ -183,6 +193,11 @@ td {
     border-bottom: 1px solid #ddd;
 }
 
+tbody tr {
+    max-height: 5px;
+    overflow-x: auto;
+}
+
 ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
@@ -197,9 +212,6 @@ td {
 }
 
 /* Project */
-#top-projs-table {
-    margin-bottom: 10px;
-}
 
 #top-projs-container {
     justify-items: center;
@@ -225,148 +237,8 @@ td {
     color: black;
 }
 
-/* Education */
-
-.timeline-ul {
-    --col-gap: 2rem;
-    --row-gap: 2rem;
-    --line-w: 0.25rem;
-    display: grid;
-    grid-template-columns: var(--line-w) 1fr;
-    grid-auto-columns: max-content;
-    column-gap: var(--col-gap);
-    list-style: none;
-    margin-inline: auto;
-}
-
-.timeline-ul::before {
-    content: "";
-    grid-column: 1;
-    grid-row: 1 / span 30;
-    background: rgb(225, 225, 225);
-    border-radius: calc(var(--line-w) / 2);
-}
-
-.timeline-ul li:not(:last-child) {
-    margin-bottom: var(--row-gap);
-}
-
-.timeline-ul li {
-    grid-column: 2;
-    --inlineP: 1.5rem;
-    margin-inline: var(--inlineP);
-    grid-row: span 2;
-    display: grid;
-    grid-template-rows: min-content min-content min-content;
-    border-bottom: 2px solid #ddd;
-}
-
-.timeline-ul li .date {
-    --dateH: 3rem;
-    height: var(--dateH);
-    margin-inline: calc(var(--inlineP) * -1);
-    text-align: center;
-    background-color: var(--accent-color);
-    color: white;
-    font-size: 12pt;
-    font-weight: 200;
-    align-content: center;
-    position: relative;
-    border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
-}
-
-.timeline-ul li .date::before {
-    content: "";
-    width: var(--inlineP);
-    aspect-ratio: 1;
-    background: var(--accent-color);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
-    position: absolute;
-    top: 100%;
-    clip-path: polygon(0 0, 100% 0, 0 100%);
-    right: 0;
-}
-
-.timeline-ul li .date::after {
-    content: "";
-    position: absolute;
-    width: 1.5em;
-    aspect-ratio: 1;
-    background: var(--bgColor);
-    border: 0.3rem solid var(--accent-color);
-    border-radius: 50%;
-    top: 50%;
-    transform: translate(50%, -50%);
-    right: calc(100% + var(--col-gap) + var(--line-w) / 2);
-}
-
-.timeline-ul li .title,
-.timeline-ul li .descr {
-    position: relative;
-}
-
-.timeline-ul li .title {
-    overflow: hidden;
-    padding-block-start: 1.5rem;
-    padding-block-end: 1rem;
-    font-weight: 500;
-    font-size: 14px;
-}
-
-.timeline-ul li .descr {
-    padding-block-end: 1.5rem;
-    font-weight: 100;
-    font-size: 12px;
-} 
-
-/* Experience */
-
-.work-container {
-    float: left;
-    width: 100%;
-    padding: 15px;
-    margin: 0 4% 15px 0;
-}
-
-.work-container small {
-    display: block;
-    opacity: 0.7;
-}
-
-.work-container ul li { 
-    position: relative;
-    margin-left: 15px;
-    padding-left: 25px;
-    padding-bottom: 15px;
-    list-style-type: none;
-}
-
-.work-container ul li::before,
-.work-container ul li::after {
-    content: "";
-    display: block;
-    position: absolute;
-}
-
-.work-container ul li::before {
-    width: 7px;
-    height: 7px;
-    border: 3px solid black;
-    background: lightgreen;
-    border-radius: 50%;
-    left: 3px;
-    z-index: 1;
-}
-
-.work-container ul li::after {
-    width: 3px;
-    height: 100%;
-    background: black;
-    left: 7px;
-    top: 0;
-}
-
 /* Certificate */
+
 .collapsible {
     background-color: rgb(103, 198, 229);
     color: black;
@@ -454,10 +326,6 @@ td {
 
 /* Responsive - when the screen is less than 800px wide */
 @media (max-width: 800px) {
-    .timeline-container {
-        margin: 12px 8%;
-    }
-
     #left-column, #right-column {
         width: 100%;
         position: relative;

@@ -10,15 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Amy Huang</title>
 </head>
-<body class="dark-mode || light-mode">
+<body>
     <div class="row">
         <!-- Left Column -->
         <div id="left-column" class="column">
-            <div id="left-content" class="content">
-                <input type="checkbox" class="sr-only" id="dark-mode-toggle">
-                <label for="dark-mode-toggle" class="toggle">
-                    <span>Toggle dark mode</span>
-                </label>
+            <div id="left-content">
+                <a id="dark-mode-toggle" style="cursor: pointer;"><img src="https://img.icons8.com/?size=40&id=12pSX0pLuMYM&format=png&color=000000"></a>
                 <div id="profile">
                     <h1 style="margin-bottom: 8px;">Amy L Huang</h1>
                     <p>A dedicated programmer with a keen focus on the topics of Artificial Intelligence and Full-Stack App
@@ -39,73 +36,61 @@
         </div>
         <!-- Right Column -->
         <div id="right-column" class="column">
-            <div id="right-content" class="content">
+            <div id="right-content">
                 <!-- Tech Stack -->
                 <h2 class="section-title" style="margin-top: 0;">Tech Stack</h2>
                 <section id="tech-container">
-                    <a class="tech-box" href="https://www.python.org/">
-                        <img src="images/tech-stack-logos/python_logo.png" style="max-height: 25px; margin-right: 3px;" alt="Python logo"/>
+                    <div class="tech-box">
+                        <img src="https://img.icons8.com/?size=20&id=13441&format=png&color=000000" alt="Python logo" />
                         <p>Python</p>
+                    </div>
+                    <a class="tech-box">
+                        <img class="tech-box-img" src="https://img.icons8.com/?size=20&id=1476&format=png&color=000000" alt="MySQL logo" />
+                        <p>SQL</p>
                     </a>
-                    <a class="tech-box" href="https://isocpp.org/">
-                        <img src="images/tech-stack-logos/cpp_logo.png" style="max-height: 25px; margin-right: 3px;" alt="Cpp logo"/>
-                        <p>C++</p>
-                    </a>
-                    <a class="tech-box" href="https://www.java.com/en/">
-                        <img src="images/tech-stack-logos/java_logo.png" style="max-height: 25px; margin-right: 3px;" alt="Java logo"/>
+                    <div class="tech-box">
+                        <img class="tech-box-img" src="https://img.icons8.com/?size=20&id=13679&format=png&color=000000" alt="Java logo"/>
                         <p>Java</p>
-                    </a>
-                    <a class="tech-box" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-                        <img src="images/tech-stack-logos/html_logo.png" style="max-height: 25px; margin-right: 3px;" alt="HTML logo"/>
+                    </div>
+                    <div class="tech-box">
+                        <img class="tech-box-img" src="https://img.icons8.com/?size=20&id=20909&format=png&color=000000" alt="HTML logo"/>
                         <p>HTML</p>
-                    </a>
-                    <a class="tech-box" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-                        <img src="images/tech-stack-logos/css_logo.png" style="max-height: 25px; margin-right: 3px;" alt="CSS logo"/>
+                    </div>
+                    <div class="tech-box">
+                        <img class="tech-box-img" src="https://img.icons8.com/?size=20&id=21278&format=png&color=000000" alt="CSS logo"/>
                         <p>CSS</p>
-                    </a>
-                    <a class="tech-box" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-                        <img src="images/tech-stack-logos/js_logo.png" style="max-height: 25px; margin-right: 3px;" alt="JavaScript logo"/>
+                    </div>
+                    <div class="tech-box">
+                        <img class="tech-box-img" src="https://img.icons8.com/?size=20&id=108784&format=png&color=000000" alt="JavaScript logo"/>
                         <p>JavaScript</p>
-                    </a>
-                    <a class="tech-box" href="https://reactnative.dev/">
-                        <img src="images/tech-stack-logos/react-native_logo.png" style="max-height: 25px; margin-right: 3px;" alt="React Native logo"/>
+                    </div>
+                    <div class="tech-box">
+                        <img class="tech-box-img" src="https://img.icons8.com/?size=20&id=40669&format=png&color=000000" alt="Cpp logo" />
+                        <p>C++</p>
+                    </div>
+                    <div class="tech-box">
+                        <img class="tech-box-img" src="https://img.icons8.com/?size=20&id=58811&format=png&color=000000" alt="React Native logo"/>
                         <p>React Native</p>
-                    </a>
-                    <a class="tech-box" href="https://expo.dev/go">
-                        <img src="images/tech-stack-logos/expo-go_logo.png" style="max-height: 25px; margin-right: 3px;" alt="Expo logo"/>
-                        <p>Expo Go</p>
-                    </a>
-                    <a class="tech-box" href="https://firebase.google.com/">
-                        <img src="images/tech-stack-logos/firebase_logo.png" style="max-height: 25px; margin-right: 3px;" alt="Firebase logo"/>
+                    </div>
+                    <div class="tech-box">
+                        <img class="tech-box-img" src="https://img.icons8.com/?size=20&id=62452&format=png&color=000000" alt="Firebase logo"/>
                         <p>Firebase</p>
-                    </a>
-                    <a class="tech-box" href="https://www.mysql.com/">
-                        <img src="images/tech-stack-logos/mysql_logo.png" style="max-height: 25px; margin-right: 3px;" alt="MySQL logo"/>
-                        <p>MySQL</p>
-                    </a>
-                    <a class="tech-box" href="https://www.mongodb.com/">
-                        <img src="images/tech-stack-logos/mongodb_logo.png" style="max-height: 25px; margin-right: 3px;" alt="MongoDB logo"/>
+                    </div>
+                    <a class="tech-box">
+                        <img class="tech-box-img" src="https://img.icons8.com/?size=20&id=bosfpvRzNOG8&format=png&color=000000" alt="MongoDB logo"/>
                         <p>MongoDB</p>
-                    </a>
-                    <a class="tech-box" href="https://www.gnu.org/software/make/">
-                        <img src="images/tech-stack-logos/makefile_icon.png" style="max-height: 25px; margin-right: 3px;" alt="Makefile logo"/>
-                        <p>Makefile</p>
-                    </a>
-                    <a class="tech-box" href="https://code.visualstudio.com/">
-                        <img src="images/tech-stack-logos/vscode_logo.png" style="max-height: 25px; margin-right: 3px;" alt="VScode logo"/>
-                        <p>VScode</p>
                     </a>
                 </section>
                 <!-- Work Experience -->
                 <h2 class="section-title">Experience</h2>
-                <section class="work-container">
+                <section class="timeline-container" style="--accent-color:limegreen">
                     <ul>
-                        <li class="work-entry">
+                        <li class="timeline-entry">
                             <span>Information & Computer Science Tutor, UCI (<a href="https://ics.uci.edu/2024/03/05/the-ics-tutoring-center-is-here-to-help/" target="_blank" class="underline">Link</a>)</span>
-                            <small>Supported undergraduate students by answering questions concerning 10 courses</small>
                             <small>Oct 2023 - June 2024</small>
+                            <small>Supported undergraduate students by answering questions concerning 10 courses</small>
                         </li>
-                        <li class="work-entry">
+                        <li class="timeline-entry">
                             <span>Testing (Will Remove later) - ICS Tutor, UCI </span>
                             <small>Supported undergraduate students by answering questions concerning 10 courses</small>
                             <small>Oct 2023 - June 2024</small>
@@ -114,7 +99,7 @@
                 </section>
                 <!-- Projects -->
                 <h2 class="section-title">Top Projects</h2>
-                <section id="top-projs-container">
+                <section id="top-projs-container" style="margin-bottom: 0;">
                     <div class="table-container">
                         <table>
                             <thead>
@@ -127,34 +112,33 @@
                             <tbody>
                                 <tr>
                                     <td>MovieShop</td>
-                                    <td>Web Design</td>
+                                    <td>Website to browse and buy movies</td>
                                     <td><a href="#" class="underline">GitHub</a></td>
                                 </tr>
                                 <tr>
                                     <td>Health₂O</td>
-                                    <td>A wellness advisor app focused on helping users lead healthier lives, by providing a
-                                        comprehensive solution to manage
-                                        and improve exercise, sleep, and hydration.</td>
+                                    <td>Mobile app that help improves the user’s sleep schedule, exercise frequency, and hydration level</td>
                                     <td><a href="https://github.com/AmyLHuang/Health2O" target="_blank" class="underline">GitHub</a></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </section>
-                <div style="text-align: center;"><a id="proj-btn" href="projects.html">View All Projects</a></div>
+                <div style="text-align: center; margin-bottom: 12px;"><a id="proj-btn" href="projects.html">View All Projects</a></div>
                 <!-- Education TimeLine -->
                 <h2 class="section-title">Education</h2>
-                <section class="timeline-container">
-                    <ul class="timeline-ul">
-                        <li style="--accent-color:#41516C">
-                            <div class="date">Oct 2020 - June 2024</div>
-                            <div class="title">University of California, Irvine. <br/> Computer Science, B.S., Intelligent Systems.</div>
-                            <div class="descr">GPA: 3.9</div>
+                <section class="timeline-container" style="--accent-color:orange">
+                    <ul>
+                        <li class="timeline-entry">
+                            <span>University of California, Irvine</span>
+                            <small>B.S. Computer Science; Specialized in Intelligent Systems</small>
+                            <small>October 2020 - June 2024</small>
+                            <small>GPA: 3.9</small>
                         </li>
-                        <li style="--accent-color:#1B5F8C">
-                            <div class="date">2016 - 2020</div>
-                            <div class="title">Sunny Hills High School.</div>
-                            <div class="descr">GPA: 4.0 unweighted</div>
+                        <li class="timeline-entry">
+                            <span>Sunny Hills High School</span>
+                            <small>2016 - 2020</small>
+                            <small>Unweighted GPA: 4.0</small>
                         </li>
                     </ul>
                 </section>
@@ -175,7 +159,7 @@
                     </div>
                 </section>
                 <!-- Footer Notes -->
-                <footer id="footer-notes"><small>Website created using HTML, CSS, and JS. <br> ©AmyHuang All rights reserved</small></footer>
+                <footer id="footer-notes"><small>Website created using HTML, CSS, and JS. Tech Stack Icons by <a href="https://icons8.com/">Icons8</a>. <br> ©AmyHuang All rights reserved</small></footer>
             </div>
         </div>
     </div>
