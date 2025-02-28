@@ -14,11 +14,8 @@
     <div class="row">
         <!-- Left Column -->
         <div id="left-column" class="column">
-            <div id="left-content" class="content">
-                <input type="checkbox" class="sr-only" id="dark-mode-toggle">
-                <label for="dark-mode-toggle" class="toggle">
-                    <span>Toggle dark mode</span>
-                </label>
+            <div id="left-content">
+                <a id="dark-mode-toggle" style="cursor: pointer;"><img src="https://img.icons8.com/?size=40&id=12pSX0pLuMYM&format=png&color=000000"></a>
                 <div id="profile">
                     <h1 style="margin-bottom: 8px;">Amy L Huang</h1>
                     <p>A dedicated programmer with a keen focus on the topics of Artificial Intelligence and Full-Stack App Development.</p>
@@ -36,19 +33,19 @@
         </div>
         <!-- Right Column -->
         <div id="right-column" class="column">
-            <div id="right-content" class="content">
-                <div style="font-weight: 600;">
-                    <a href="index.html" class="underline"><i class="fa fa-long-arrow-left"></i> Return Home</a>
+            <div id="right-content">
+                <div id="return-home-btn">
+                    <a class="underline" href="index.html"><i class="fa fa-long-arrow-left"></i> Return Home</a>
                 </div>
                 <h2 style="text-align: center;"> My Projects</h2>
                 <!-- Projects -->
                 <div class="project">
                     <div class="proj-card">
-                        <img src="" alt="MovieShop Project Logo"/>
                         <div class="proj-info">
                             <h3>MovieShop</h3>
-                            <p>In Progress...</p>
-                            <!-- <a href="https://github.com/AmyLHuang/Health2O" target="_blank" class="underline">View on GitHub</a> -->
+                            <p>A web application where users can browse and buy movies.<br>Implemented 20+ features, including a cart checkout backed by sessions, secure login using SHA256 hashing, full-text
+                            search and auto-complete backed by cache, and protection against SQL injection attacks via PreparedStatements. </p>
+                            <a href="https://github.com/AmyLHuang/MovieShop" target="_blank" class="underline">View on GitHub</a>
                         </div>
                     </div>
                     <div class="proj-tech-stack">
@@ -82,7 +79,9 @@
                     </div>
                 </div>
                 <!-- Footer Notes -->
-                <footer id="footer-notes"><small>Website created using HTML, CSS, and JS. <br> ©AmyHuang All rights reserved</small>
+                <footer id="footer-notes">
+                    <small>Website created using HTML, CSS, and JS.<br>
+                        ©AmyHuang All rights reserved</small>
                 </footer>
             </div>
         </div>

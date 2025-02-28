@@ -1,5 +1,7 @@
+/* Dark Mode */
+
 body.dark-mode {
-    background-color: #000219;
+    background-color: #121212;
     color: white;
 }
 
@@ -8,7 +10,44 @@ body.dark-mode #left-column {
 }
 
 body.dark-mode a {
-    color: coral;
+    color: salmon;
+}
+
+/* Media Links */
+
+body.dark-mode #media-icons {
+    margin-bottom: 8px;
+}
+
+body.dark-mode #media-icons a {
+    font-size: 32px;
+    color: palevioletred;
+}
+
+body.dark-mode #media-icons a:hover {
+    color: salmon;
+}
+
+body.dark-mode #media-icons a:visited {
+    color: palevioletred;
+}
+
+/* Tech Stack */
+
+body.dark-mode .tech-box {
+    color: black;
+}
+
+/* Timeline */
+
+body.dark-mode .timeline-container ul li::after {
+    background: white;
+}
+
+/* Top Project */
+
+body.dark-mode .scrollable-table thead th {
+    background-color: darkred;
 }
 
 body.dark-mode #proj-btn {
@@ -21,43 +60,17 @@ body.dark-mode #proj-btn:hover {
     background-color: rgb(173, 0, 0);
 }
 
-body.dark-mode thead th {
-    background-color: darkred;
-}
-
-body.dark-mode #media-icons {
-    margin-bottom: 8px;
-}
-
-body.dark-mode #media-icons a {
-    font-size: 32px;
-    color: palevioletred;
-}
-
-body.dark-mode #media-icons a:visited {
-    color: palevioletred;
-}
-
-body.dark-mode #media-icons a:hover {
-    color: salmon;
-}
+/* Projects Page  */
 
 body.dark-mode .proj-card {
-    background-color: midnightblue;
+    background-color: #1F1B24;
 }
 
 body.dark-mode .proj-card .proj-info p {
     color: antiquewhite;
 }
 
-body.dark-mode .tech-box {
-    color: black;
-}
-
 body.dark-mode .proj-tech-stack {
-    background-color: #beb8e4;
-}
-
-body.dark-mode .timeline-container ul li::after {
-    background: white;
+    background-color: #544b5e;
+    color: white;
 }

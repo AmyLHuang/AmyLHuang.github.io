@@ -14,6 +14,7 @@ h1 {
 
 section {
     margin: 12px;
+    margin-bottom: 15px;
 }
 
 /* Body Layout */
@@ -47,8 +48,6 @@ section {
 #right-content {
     padding: 6% 10% 1% 10%;
 }
-
-/* --- Components --- */
 
 /* Link Hover Underline Animation */
 
@@ -129,7 +128,7 @@ section {
 
 .timeline-container small {
     display: block;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .timeline-container ul li {
@@ -164,21 +163,21 @@ section {
     top: 0;
 }
 
-/* Table (top projects) */
+/* Scrollable Table (top projects) */
 
-.table-container {
+.scrollable-table-container {
     max-height: 300px;
     overflow-y: auto;
     border: 1px solid #ccc;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 }
 
-table {
+.scrollable-table {
     border-collapse: collapse;
     gap: 0;
 }
 
-thead th {
+.scrollable-table thead th {
     position: sticky;
     top: 0;
     background-color: salmon;
@@ -186,16 +185,11 @@ thead th {
     margin: 0;
 }
 
-th,
-td {
+.scrollable-table th,
+.scrollable-table td {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-}
-
-tbody tr {
-    max-height: 5px;
-    overflow-x: auto;
 }
 
 ::-webkit-scrollbar {
@@ -211,7 +205,7 @@ tbody tr {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Project */
+/* Top Project */
 
 #top-projs-container {
     justify-items: center;
@@ -223,8 +217,8 @@ tbody tr {
     padding: 4px 84px;
     border: 2px solid salmon;
     border-radius: 25px;
-    text-decoration: none;
     font-size: 12px;
+    text-decoration: none;
     color: black;
     cursor: pointer;
 }
@@ -280,60 +274,25 @@ tbody tr {
     transition: max-height 0.2s ease-out;
 }
 
+/* Other */
+#return-home-btn {
+    font-weight: 600;
+}
 
-/* Responsive - when the screen is more than 800px wide */
- @media (min-width: 1200px) {
-    .timeline-ul {
-        grid-template-columns: 1fr var(--line-w) 1fr;
-    }
-
-    .timeline-ul::before {
-        grid-column: 2;
-    }
-
-    .timeline-ul li:nth-child(odd) {
-        grid-column: 1;
-    }
-
-    .timeline-ul li:nth-child(even) {
-        grid-column: 3;
-    }
-
-    .timeline-ul li:nth-child(2) {
-        grid-row: 2/4;
-    }
-
-    .timeline-ul li:nth-child(odd) .date::before {
-        clip-path: polygon(0 0, 100% 0, 100% 100%);
-        left: 0;
-    }
-
-    .timeline-ul li:nth-child(odd) .date::after {
-        transform: translate(-50%, -50%);
-        left: calc(100% + var(--col-gap) + var(--line-w) / 2);
-    }
-
-    .timeline-ul li:nth-child(odd) .date {
-        border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
-    }
-
-    .timeline-ul li .title,
-    .timeline-ul li .descr {
-        position: relative;
-        padding-inline: 1.5rem;
-    }
+#footer-notes {
+    text-align: center;
+    margin: 50px 0 20px 0;
+    font-size: small;
+    opacity: 80%;
 }
 
 /* Responsive - when the screen is less than 800px wide */
+
 @media (max-width: 800px) {
     #left-column, #right-column {
         width: 100%;
         position: relative;
         min-height: auto;
-    }
-
-    .content {
-        padding: 8% 10% 1% 10%;
     }
 
     #left-content, #right-content {
@@ -344,13 +303,10 @@ tbody tr {
     #left-content {
         text-align: left;
     }
-}
 
-#footer-notes {
-    text-align: center;
-    margin: 50px 0 20px 0;
-    font-size: small;
-    opacity: 80%;
+    #return-home-btn {
+        margin-bottom: 10px;
+    }
 }
 
 
