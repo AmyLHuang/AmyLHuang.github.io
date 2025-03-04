@@ -173,7 +173,7 @@ section {
     border: 3px solid black;
     background-color: var(--accent-color);
     border-radius: 50%;
-    left: 3px;
+    left: 2.4px;
     z-index: 1;
 }
 
