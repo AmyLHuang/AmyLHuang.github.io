@@ -54,19 +54,19 @@ a:hover {
 }
 
 .button {
-    border: none;
+    /* border: none; */
     padding: 6px 11px 8px;
-    ;
     border-radius: 18px;
     font-size: 12pt;
     cursor: pointer;
-    color: var(--main-text-color);
-    background-color: #ff0000;
+    color: #000;
+    background-color: #fff;
     transition: background-color 0.3s ease;
+    border: 3px solid #3300ff
 }
 
 .button:hover {
-    background-color: #cc0000;
+    background-color: #00ffff;
     text-decoration: none;
 }
 
@@ -154,7 +154,7 @@ nav {
 }
 
 #introduction p {
-    margin: 1rem;
+    margin: 0.5rem 0 2rem;
 }
 
 .intro-btns {
@@ -214,7 +214,7 @@ nav {
     border-bottom-right-radius: 5px;
 }
 
-.fakeScreen pre {
+.fakeScreen p {
     text-align: left;
     white-space: pre-wrap;
     word-wrap: break-word;
@@ -224,15 +224,30 @@ nav {
     text-indent: -2ch;
 }
 
-.fakeScreen pre:nth-child(odd) {
+.about-links-list {
+    justify-items: left;
+    padding-bottom: 10px;
+}
+
+.about-links-list li {
+    /* display: inline; */
+    list-style: none;
+}
+
+.about-links-list li a {
+    padding: 0;
+    margin: 0;
+}
+
+.fakeScreen p:nth-child(odd) {
     color: #4CAF50;
 }
 
-.fakeScreen pre:nth-child(even) {
+.fakeScreen p:nth-child(even) {
     margin-bottom: 10px;
 }
 
-.fakeScreen pre:last-child:after {
+.fakeScreen p:last-child:after {
     content: "";
     display: inline-block;
     width: 2px;
@@ -412,7 +427,7 @@ footer {
     }
 
     .button {
-        font-size: 10pt;
+        font-size: 9pt;
     }
 
     .experience img {
@@ -451,7 +466,7 @@ footer {
     }
 
     .side-nav-links li {
-        padding: 10px 0;
+        padding: 18px 0;
         width: 100%;
         transition: background-color 0.3s ease;
     }
@@ -460,6 +475,7 @@ footer {
         display: block;
         width: 100%;
         font-weight: bold;
+        font-size: 14pt;
     }
 
     .side-nav-links li:hover {

@@ -41,23 +41,21 @@ document.addEventListener('mousemove', (e) => {
 
 function toggleMenu(event) {
     var sideMenu = document.querySelector('.side-menu');
-    sideMenu.classList.toggle('open');
-
-    if (sideMenu.classList.contains('open')) {
-        document.addEventListener('click', closeOnClickOutside);
-    } else {
-        document.removeEventListener('click', closeOnClickOutside);
-    }
-}
-
-function closeOnClickOutside(event) {
-    var sideMenu = document.querySelector('.side-menu');
     var toggleButton = document.querySelector('.hamburger');
-
-    // Check if the clicked element is outside the menu and not the toggle button
-    if (!sideMenu.contains(event.target) && !toggleButton.contains(event.target)) {
-        sideMenu.classList.remove('open');
-        document.removeEventListener('click', closeOnClickOutside);
+    
+    // Toggle the 'open' class to show/hide the side menu
+    sideMenu.classList.toggle('open');
+    
+    // Close menu when clicking outside
+    if (sideMenu.classList.contains('open')) {
+        document.addEventListener('click', function closeOnClickOutside(event) {
+            if (!sideMenu.contains(event.target) && !toggleButton.contains(event.target)) {
+                sideMenu.classList.remove('open');
+                document.removeEventListener('click', closeOnClickOutside); // Remove listener after closing
+            }
+        });
+    } else {
+        document.removeEventListener('click', closeOnClickOutside); // Remove listener when menu is closed
     }
 }
 

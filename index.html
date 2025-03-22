@@ -9,6 +9,7 @@
     <title>Amy Huang</title>
 </head>
 <body>
+    <a href="#main-content" style="display: none;">Skip to main content</a>
     <div id="particles-container"></div>
     <nav>
         <a class="logo" href="index.html"><img src="static/images/logo.png" alt="logo" /></a>
@@ -26,110 +27,118 @@
             </ul>
         </div>
     </nav>
-    <section id="introduction">
-        <h1>I'm <span class="orange-text">Amy Huang</span>, <br> Data Analyst and Web Developer.</h1>
-        <p>I am a software developer located in <i class="fa fa-map-marker"></i> California, USA.</p>
-        <div class="intro-btns">
-            <a class="button" href="https://www.linkedin.com/in/amyhuang19/" target="_blank"><i class="fa fa-handshake-o"></i> Connect with me</a>
-            <a class="button" href="resumes/Resume-Huang-Amy.pdf" download><i class="fa fa-download"></i> Download Resume</a>
-        </div>
-    </section>
-    <hr class="divider">
-    <h2>About Me</h2>
-    <hr class="line" />
-    <section id="about-section">
-        <div class=fakeMenu>
-            <div class="fakeButtons fakeClose"></div>
-            <div class="fakeButtons fakeMinimize"></div>
-            <div class="fakeButtons fakeZoom"></div>
-        </div>
-        <div class="fakeScreen">
-            <pre>> self.name</pre>
-            <pre>  Amy Huang</pre>
-            <pre>> self.location</pre>
-            <pre>  Buena Park, California, USA</pre>
-            <pre>> self.education</pre>
-            <pre>  UC Irvine, Class of 2022, B.S. Computer Science</pre>
-            <pre>> self.hobbies</pre>
-            <pre>  Reading, YouTube, Badminton</pre>
-            <pre>> self.resume</pre>
-            <pre>  [<a href="static/resumes/Resume-Huang-Amy.pdf" target="_blank">General</a>]</pre>
-            <!-- <pre>  [<a href="resumes/Resume-Huang-Amy.pdf" target="_blank">General</a>, <a>Beautified</a>, <a>WebDev</a>, <a>DataAnalyst</a>]</pre> -->
-            <pre>> self.certificates</pre>
-            <pre>  [<a href="static/certificates/certificate_sas1.png" target="_blank">SAS:Essentials 1</a>, <a href="static/certificates/certificate-advanced-software-engineering-codepath.pdf" target="_blank">Codepath Advanced Software Engineering</a>, <a href="static/certificates/certificate-andriod-dev-codepath.pdf" target="_blank">Codepath Andriod Development</a>]</pre>
-            <pre>> </pre>
-        </div>
-    </section>
-    <h2>Work Experience</h2>
-    <hr class="line" />
-    <section id="experience-section">
-        <div class="experience">
-            <img src="static/images/work/tcs-logo.png" alt="work tcs logo" />
-            <div class="experience-info">
-                <h3>Tata Consultancy Services (TCS)</h3>
-                <p>Software Developer Intern</p>
-                <p>Jan 2024 - June 2024 (6 months)</p>
-                <ul>
-                    <li>Implemented a multi-agent framework to mitigate bias in large language models (LLMs) during synthetic data generation</li>
-                    <li>Enhanced and extended a Chat UI from Hugging Face, integrating advanced AI capabilities for improved interaction</li>
-                    <li>Conducted comprehensive evaluations across multiple LLMs of varying scales, including Mistral 7B, Llama 2, GPT, and Claude 2, to assess performance and bias mitigation</li>
-                    <li>Managed backend operations using MongoDB, ensuring efficient data handling and storage</li>
-                    <li class="experience-link"><a href="static/images/work/tcs-poster.jpg" target="_blank">View Poster</a></i></li>
+    <main id="main-content">
+        <section id="introduction">
+            <h1>I'm <span class="orange-text">Amy Huang</span>, <br> Data Analyst and Web Developer.</h1>
+            <p>I am a software developer located in <i class="fa fa-map-marker"></i> California, USA.</p>
+            <div class="intro-btns">
+                <a class="button" href="https://www.linkedin.com/in/amyhuang19/" target="_blank"><i class="fa fa-handshake-o"></i> Connect with me</a>
+                <a class="button" href="resumes/Resume-Huang-Amy.pdf" download><i class="fa fa-download"></i> Download Resume</a>
+            </div>
+        </section>
+        <hr class="divider">
+        <h2>About Me</h2>
+        <hr class="line" />
+        <section id="about-section">
+            <div class=fakeMenu>
+                <div class="fakeButtons fakeClose"></div>
+                <div class="fakeButtons fakeMinimize"></div>
+                <div class="fakeButtons fakeZoom"></div>
+            </div>
+            <div class="fakeScreen">
+                <p>> self.name</p>
+                <p>&nbsp;&nbsp; Amy Huang</p>
+                <p>> self.location</p>
+                <p>&nbsp;&nbsp; Buena Park, California, USA</p>
+                <p>> self.education</p>
+                <p>&nbsp;&nbsp; UC Irvine, Class of 2022, B.S. Computer Science</p>
+                <p>> self.hobbies</p>
+                <p>&nbsp;&nbsp; Reading, YouTube, Badminton</p>
+                <p>> self.resume</p>
+                <ul class="about-links-list">
+                    <li>&nbsp;&nbsp; <a href="static/resumes/Resume-Huang-Amy.pdf" target="_blank">General</a></li>
                 </ul>
-            </div>
-        </div>
-        <div class="experience">
-            <img src="static/images/work/uci-logo.png" alt="work uci logo" />
-            <div class="experience-info">
-                <h3>UC Irvine, Donald Bren School of Information & Computer Science</h3>
-                <p>ICS Tutor</p>
-                <p>Oct 2023 - June 2024 (9 months)</p>
-                <ul>
-                    <li>Coordinated with a supervisor and 11 other students to provide a free help center for undergrads who had any questions on course material</li>
-                    <li>Beta tested the program, covered 10 courses, supported 100+ students, and the program remains active</li>
+                <!-- [<a href="resumes/Resume-Huang-Amy.pdf" target="_blank">General</a>, <a>Beautified</a>, <a>WebDev</a>, <a>DataAnalyst</a>] -->
+                <p>> self.certificates</p>
+                <ul class="about-links-list">
+                    <li>&nbsp;&nbsp; <a href="static/certificates/certificate_sas1.png" target="_blank">SAS:Essentials 1</a></li>
+                    <li>&nbsp;&nbsp; <a href="static/certificates/certificate-advanced-software-engineering-codepath.pdf" target="_blank">Codepath Advanced Software Engineering</a></li>
+                    <li>&nbsp;&nbsp; <a href="static/certificates/certificate-andriod-dev-codepath.pdf" target="_blank">Codepath Andriod Development</a></li>
                 </ul>
+                <p>> </p>
             </div>
-        </div>
-    </section>
-    <h2>Selected Projects</h2>
-    <hr class="line" />
-    <section id="projects-section">
-        <div class="project">
-            <h3>Health20</h3>
-            <img src="static/images/projects/Health20/canvas.png" alt="project Health20 canvas" />
-            <p>Track your fitness health goals</p>
-            <div class="overlay">
-                <a href="#" target="_blank" class="disabled-link"><i class="fa fa-external-link"></i> Case Study</a>
-                <a href="https://github.com/AmyLHuang/Health2O" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+        </section>
+        <h2>Work Experience</h2>
+        <hr class="line" />
+        <section id="experience-section">
+            <div class="experience">
+                <img src="static/images/work/tcs-logo.png" alt="work tcs logo" />
+                <div class="experience-info">
+                    <h3>Tata Consultancy Services (TCS)</h3>
+                    <p>Software Developer Intern</p>
+                    <p>Jan 2024 - June 2024 (6 months)</p>
+                    <ul>
+                        <li>Implemented a multi-agent framework to mitigate bias in large language models (LLMs) during synthetic data generation</li>
+                        <li>Enhanced and extended a Chat UI from Hugging Face, integrating advanced AI capabilities for improved interaction</li>
+                        <li>Conducted comprehensive evaluations across multiple LLMs of varying scales, including Mistral 7B, Llama 2, GPT, and Claude 2, to assess performance and bias mitigation</li>
+                        <li>Managed backend operations using MongoDB, ensuring efficient data handling and storage</li>
+                        <li class="experience-link"><a href="static/images/work/tcs-poster.jpg" target="_blank">View Poster</a></i></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="project">
-            <h3>Portfolio</h3>
-            <img src="static/images/projects/Portfolio/website-home.png" alt="project Portfolio home page" />
-            <p>this.website</p>
-            <div class="overlay">
-                <a href="#" target="_blank" class="disabled-link"><i class="fa fa-external-link"></i> Case Study</a>
-                <a href="https://github.com/AmyLHuang/AmyLHuang.github.io" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+            <div class="experience">
+                <img src="static/images/work/uci-logo.png" alt="work uci logo" />
+                <div class="experience-info">
+                    <h3>UC Irvine, Donald Bren School of Information & Computer Science</h3>
+                    <p>ICS Tutor</p>
+                    <p>Oct 2023 - June 2024 (9 months)</p>
+                    <ul>
+                        <li>Coordinated with a supervisor and 11 other students to provide a free help center for undergrads who had any questions on course material</li>
+                        <li>Beta tested the program, covered 10 courses, supported 100+ students, and the program remains active</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="project">
-            <h3>MovieShop</h3>
-            <img src="static/images/projects/MovieShop/genre-page.png" alt="project MovieShop genre page" />
-            <p>Browse and shop for movies</p>
-            <div class="overlay">
-                <a href="#" target="_blank" class="disabled-link"><i class="fa fa-external-link"></i> Case Study</a>
-                <a href="https://github.com/AmyLHuang/MovieShop" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+        </section>
+        <h2>Selected Projects</h2>
+        <hr class="line" />
+        <section id="projects-section">
+            <div class="project">
+                <h3>Health20</h3>
+                <img src="static/images/projects/Health20/canvas.png" alt="project Health20 canvas" />
+                <p>Track your fitness health goals</p>
+                <div class="overlay">
+                    <a href="#" target="_blank" class="disabled-link"><i class="fa fa-external-link"></i> Case Study</a>
+                    <a href="https://github.com/AmyLHuang/Health2O" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+                </div>
             </div>
-        </div>
-    </section>
-    <hr class="divider">
-    <h2>Connect</h2>
-    <hr class="line" />
-    <section id="connect-section">
-        <a href="https://www.linkedin.com/in/amyhuang19/" target="_blank" title="LinkedIn: amyhuang19"> <i class="fa fa-linkedin-square"></i></a>
-        <a href="https://github.com/AmyLHuang/" target="_blank" title="GitHub: AmyLHuang"> <i class="fa fa-github-square"></i></a>
-        <a href="mailto:amyhuang8119@gmail.com" target="_blank" title="Email: amyhuang8119@gmail.com"> <i class="fa fa-envelope-square"></i></a>
-    </section>
+            <div class="project">
+                <h3>Portfolio</h3>
+                <img src="static/images/projects/Portfolio/website-home.png" alt="project Portfolio home page" />
+                <p>this.website</p>
+                <div class="overlay">
+                    <a href="#" target="_blank" class="disabled-link"><i class="fa fa-external-link"></i> Case Study</a>
+                    <a href="https://github.com/AmyLHuang/AmyLHuang.github.io" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="project">
+                <h3>MovieShop</h3>
+                <img src="static/images/projects/MovieShop/genre-page.png" alt="project MovieShop genre page" />
+                <p>Browse and shop for movies</p>
+                <div class="overlay">
+                    <a href="#" target="_blank" class="disabled-link"><i class="fa fa-external-link"></i> Case Study</a>
+                    <a href="https://github.com/AmyLHuang/MovieShop" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </section>
+        <hr class="divider">
+        <h2>Connect</h2>
+        <hr class="line" />
+        <section id="connect-section">
+            <a href="https://www.linkedin.com/in/amyhuang19/" target="_blank" title="LinkedIn: amyhuang19"> <i class="fa fa-linkedin-square"></i></a>
+            <a href="https://github.com/AmyLHuang/" target="_blank" title="GitHub: AmyLHuang"> <i class="fa fa-github-square"></i></a>
+            <a href="mailto:amyhuang8119@gmail.com" target="_blank" title="Email: amyhuang8119@gmail.com"> <i class="fa fa-envelope-square"></i></a>
+        </section>
+    </main>
     <footer>
         © 2025 Amy Huang. All rights reserved.
     </footer>
