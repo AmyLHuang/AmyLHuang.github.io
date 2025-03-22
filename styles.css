@@ -49,7 +49,7 @@ a:hover {
     width: 40px;
     border-width: 0;
     background-color: blue;
-    justify-self: center;
+    place-self: center;
     margin-bottom: 1.5rem;
 }
 
@@ -80,6 +80,7 @@ nav {
 }
 
 .logo {
+    display: block;
     height: fit-content;
     margin-right: auto;
 }
@@ -206,6 +207,7 @@ nav {
 }
 
 .fakeScreen {
+    display: block;
     background-color: #151515;
     margin: 0 auto;
     padding: 20px;
@@ -382,6 +384,7 @@ nav {
     gap: .5rem;
     margin: 1rem;
     justify-content: center;
+    align-items: center;
 }
 
 #connect-section i {
@@ -449,6 +452,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        align-items: center;
         position: fixed;
         top: 0;
         right: -250px;
