@@ -12,7 +12,7 @@
     <a href="#main-content" style="display: none;">Skip to main content</a>
     <div id="particles-container"></div>
     <nav>
-        <a class="logo" href="index.html"><img src="static/images/logo.png" alt="logo" /></a>
+        <a class="logo" href="index.html"><img src="static/images/logo.png" alt="logo"></a>
         <ul class="nav-links">
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
@@ -20,7 +20,7 @@
         <a class="button connect-link" href="https://www.linkedin.com/in/amyhuang19/" target="_blank">Connect With Me</a>
         <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
         <div class="side-menu">
-            <div class="close-btn" onclick="toggleMenu()">&#10006;</div>
+            <div class="close-btn" onclick="toggleMenu()"><i class="fa fa-close"></i></div>
             <ul class="side-nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -37,9 +37,9 @@
             </div>
         </section>
         <hr class="divider">
-        <h2>About Me</h2>
-        <hr class="line" />
         <section id="about-section">
+            <h2>About Me</h2>
+            <hr class="line">
             <div class=fakeMenu>
                 <div class="fakeButtons fakeClose"></div>
                 <div class="fakeButtons fakeMinimize"></div>
@@ -57,22 +57,22 @@
                 <p>> self.resume</p>
                 <ul class="about-links-list">
                     <li><a href="static/resumes/Resume-Amy-Huang.pdf" target="_blank">General</a></li>
+                    <!-- Beautified, WebDev, DataAnalyst -->
                 </ul>
-                <!-- [<a href="resumes/Resume-Huang-Amy.pdf" target="_blank">General</a>, <a>Beautified</a>, <a>WebDev</a>, <a>DataAnalyst</a>] -->
                 <p>> self.certificates</p>
                 <ul class="about-links-list">
-                    <li><a href="static/certificates/certificate_sas1.png" target="_blank">SAS:Essentials 1</a>,</li>
-                    <li><a href="static/certificates/certificate-advanced-software-engineering-codepath.pdf" target="_blank">Codepath Advanced Software Engineering</a>,</li>
+                    <li><a href="static/certificates/certificate_sas1.png" target="_blank">SAS:Essentials 1</a> ,</li>
+                    <li><a href="static/certificates/certificate-advanced-software-engineering-codepath.pdf" target="_blank">Codepath Advanced Software Engineering</a> ,</li>
                     <li><a href="static/certificates/certificate-andriod-dev-codepath.pdf" target="_blank">Codepath Android Development</a></li>
                 </ul>
                 <p>> </p>
             </div>
         </section>
-        <h2>Work Experience</h2>
-        <hr class="line" />
         <section id="experience-section">
+            <h2>Work Experience</h2>
+            <hr class="line">
             <div class="experience">
-                <img src="static/images/work/tcs-logo.png" alt="work tcs logo" />
+                <img src="static/images/work/tcs-logo.png" alt="work tcs logo">
                 <div class="experience-info">
                     <h3>Tata Consultancy Services (TCS)</h3>
                     <p>Software Developer Intern</p>
@@ -82,12 +82,12 @@
                         <li>Enhanced and extended a Chat UI from Hugging Face, integrating advanced AI capabilities for improved interaction</li>
                         <li>Conducted comprehensive evaluations across multiple LLMs of varying scales, including Mistral 7B, Llama 2, GPT, and Claude 2, to assess performance and bias mitigation</li>
                         <li>Managed backend operations using MongoDB, ensuring efficient data handling and storage</li>
-                        <li class="experience-link"><a href="static/images/work/tcs-poster.jpg" target="_blank">View Poster</a></i></li>
+                        <li class="experience-link"><a href="static/images/work/tcs-poster.jpg" target="_blank">View Poster</a></li>
                     </ul>
                 </div>
             </div>
             <div class="experience">
-                <img src="static/images/work/uci-logo.png" alt="work uci logo" />
+                <img src="static/images/work/uci-logo.png" alt="work uci logo">
                 <div class="experience-info">
                     <h3>UC Irvine, Donald Bren School of Information & Computer Science</h3>
                     <p>ICS Tutor</p>
@@ -99,44 +99,53 @@
                 </div>
             </div>
         </section>
-        <h2>Selected Projects</h2>
-        <hr class="line" />
         <section id="projects-section">
-            <div class="project">
-                <h3>Health20</h3>
-                <img src="static/images/projects/Health20/canvas.png" alt="project Health20 canvas" />
-                <p>Track your fitness health goals</p>
-                <div class="overlay">
-                    <a href="#" target="_blank" class="disabled-link"><i class="fa fa-external-link"></i> Case Study</a>
-                    <a href="https://github.com/AmyLHuang/Health2O" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+            <h2>Selected Projects</h2>
+            <hr class="line">
+            <div class="projects">
+                <div class="project">
+                    <h3>Health20</h3>
+                    <img src="static/images/projects/Health20/canvas.png" alt="project Health20 canvas">
+                    <p>Track your fitness health goals</p>
+                    <div class="overlay">
+                        <a href="#" target="_blank" class="disabled-link"><i class="fa fa-external-link"></i> Case Study</a>
+                        <a href="https://github.com/AmyLHuang/Health2O" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+                    </div>
                 </div>
-            </div>
-            <div class="project">
-                <h3>Portfolio</h3>
-                <img src="static/images/projects/Portfolio/website-home.png" alt="project Portfolio home page" />
-                <p>this.website</p>
-                <div class="overlay">
-                    <a href="#" target="_blank" class="disabled-link"><i class="fa fa-external-link"></i> Case Study</a>
-                    <a href="https://github.com/AmyLHuang/AmyLHuang.github.io" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+                <div class="project">
+                    <h3>Portfolio</h3>
+                    <img src="static/images/projects/Portfolio/website-home.png" alt="project Portfolio home page">
+                    <p>this.website</p>
+                    <div class="overlay">
+                        <a href="#" target="_blank" class="disabled-link"><i class="fa fa-external-link"></i> Case Study</a>
+                        <a href="https://github.com/AmyLHuang/AmyLHuang.github.io" target="_blank"><i class="fa fa-github"></i>
+                            GitHub</a>
+                    </div>
                 </div>
-            </div>
-            <div class="project">
-                <h3>MovieShop</h3>
-                <img src="static/images/projects/MovieShop/genre-page.png" alt="project MovieShop genre page" />
-                <p>Browse and shop for movies</p>
-                <div class="overlay">
-                    <a href="#" target="_blank" class="disabled-link"><i class="fa fa-external-link"></i> Case Study</a>
-                    <a href="https://github.com/AmyLHuang/MovieShop" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+                <div class="project">
+                    <h3>MovieShop</h3>
+                    <img src="static/images/projects/MovieShop/genre-page.png" alt="project MovieShop genre page">
+                    <p>Browse and shop for movies</p>
+                    <div class="overlay">
+                        <a href="#" target="_blank" class="disabled-link"><i class="fa fa-external-link"></i> Case Study</a>
+                        <a href="https://github.com/AmyLHuang/MovieShop" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+                    </div>
                 </div>
             </div>
         </section>
         <hr class="divider">
-        <h2>Connect</h2>
-        <hr class="line" />
         <section id="connect-section">
-            <a href="https://www.linkedin.com/in/amyhuang19/" target="_blank" title="LinkedIn: amyhuang19"> <i class="fa fa-linkedin-square"></i></a>
-            <a href="https://github.com/AmyLHuang/" target="_blank" title="GitHub: AmyLHuang"> <i class="fa fa-github-square"></i></a>
-            <a href="mailto:amyhuang8119@gmail.com" target="_blank" title="Email: amyhuang8119@gmail.com"> <i class="fa fa-envelope-square"></i></a>
+            <h2>Connect</h2>
+            <hr class="line">
+            <div class="connect-section-links">
+                <a href="https://www.linkedin.com/in/amyhuang19/" target="_blank" title="LinkedIn: amyhuang19"> <i
+                        class="fa fa-linkedin-square"></i></a>
+                <a href="https://github.com/AmyLHuang/" target="_blank" title="GitHub: AmyLHuang"> <i
+                        class="fa fa-github-square"></i></a>
+                <a href="mailto:amyhuang8119@gmail.com" target="_blank" title="Email: amyhuang8119@gmail.com"> <i
+                        class="fa fa-envelope-square"></i></a>
+
+            </div>
         </section>
     </main>
     <footer>

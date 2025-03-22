@@ -39,6 +39,13 @@ document.addEventListener('mousemove', (e) => {
 
 //  For side menu
 
+function closeOnClickOutside(event, sideMenu, toggleButton) {
+    if (!sideMenu.contains(event.target) && !toggleButton.contains(event.target)) {
+        sideMenu.classList.remove('open');
+        document.removeEventListener('click', closeOnClickOutside); // Remove listener after closing
+    }
+}
+
 function toggleMenu(event) {
     var sideMenu = document.querySelector('.side-menu');
     var toggleButton = document.querySelector('.hamburger');
@@ -48,16 +55,16 @@ function toggleMenu(event) {
     
     // Close menu when clicking outside
     if (sideMenu.classList.contains('open')) {
-        document.addEventListener('click', function closeOnClickOutside(event) {
-            if (!sideMenu.contains(event.target) && !toggleButton.contains(event.target)) {
-                sideMenu.classList.remove('open');
-                document.removeEventListener('click', closeOnClickOutside); // Remove listener after closing
-            }
+        // Add event listener to close on click outside
+        document.addEventListener('click', function(event) {
+            closeOnClickOutside(event, sideMenu, toggleButton); // Pass necessary arguments
         });
     } else {
-        document.removeEventListener('click', closeOnClickOutside); // Remove listener when menu is closed
+        // Remove event listener when menu is closed
+        document.removeEventListener('click', closeOnClickOutside);
     }
 }
+
 
 // For disabled links
 document.querySelectorAll('.disabled-link').forEach(link => {

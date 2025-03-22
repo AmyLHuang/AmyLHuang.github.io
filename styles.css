@@ -309,11 +309,15 @@ nav {
 
 #projects-section {
     width: 80%;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+.projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, auto));
     gap: 1rem;
-    margin: auto;
-    margin-bottom: 4rem;
+
 }
 
 .project {
@@ -377,9 +381,12 @@ nav {
 /* Connect Section */
 
 #connect-section {
+    margin: 1rem;
+}
+
+.connect-section-links {
     display: flex;
     gap: .5rem;
-    margin: 1rem;
     justify-content: center;
     align-items: center;
 }
@@ -396,15 +403,17 @@ nav {
 /* Tech Stack Section */
 #tech-section {
     width: 80%;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+.techs {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10ch, auto));
     gap: 10px;
-    margin: auto;
-    margin-bottom: 4rem;
-
 }
 
-#tech-section div {
+.techs div {
     background-color: #222;
     padding: 1rem;
 }
@@ -465,19 +474,18 @@ footer {
         list-style-type: none;
         padding: 20px 0;
         margin-top: 60px;
+        width: 100%;
     }
 
     .side-nav-links li {
-        padding: 18px 0;
-        width: 100%;
         transition: background-color 0.3s ease;
     }
 
     .side-nav-links li a {
         display: block;
-        width: 100%;
         font-weight: bold;
         font-size: 14pt;
+        padding: 18px 0;
     }
 
     .side-nav-links li:hover {
@@ -485,11 +493,11 @@ footer {
     }
 
     .close-btn {
-        font-size: 25px;
+        font-size: 28px;
         color: var(--white);
         position: absolute;
         top: 34px;
-        right: 20%;
+        right: 45px;
         cursor: pointer;
     }
 }
