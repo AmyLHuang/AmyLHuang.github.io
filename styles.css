@@ -1,10 +1,8 @@
 :root {
     --bg-color: #101010;
-    --main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --main-font-size: 14pt;
-    --main-text-color: #f8f8f8;
-    --bright-blue-color: #6699ff;
-    --hot-pink-color: #ff6699;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-size: 14pt;
+    --white: #f8f8f8;
 }
 
 *,
@@ -17,10 +15,10 @@
 
 body {
     background-color: var(--bg-color);
-    font-family: var(--main-font);
-    font-size: var(--main-font-size);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
     text-align: center;
-    color: var(--main-text-color);
+    color: var(--white);
 }
 
 h2 {
@@ -29,7 +27,7 @@ h2 {
 
 a {
     text-decoration: none;
-    color: var(--bright-blue-color);
+    color: #6699ff;
     cursor: pointer;
 }
 
@@ -60,7 +58,7 @@ a:hover {
     font-size: 12pt;
     cursor: pointer;
     color: #000;
-    background-color: #fff;
+    background-color: var(--white);
     transition: background-color 0.3s ease;
     border: 3px solid #3300ff
 }
@@ -103,7 +101,7 @@ nav {
 }
 
 .nav-links a {
-    color: var(--main-text-color);
+    color: var(--white);
 }
 
 .nav-links a:hover {
@@ -365,7 +363,7 @@ nav {
     margin: 5px;
     padding: 10px 20px;
     background-color: #00aaff;
-    color: white;
+    color: var(--white);
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
@@ -388,7 +386,7 @@ nav {
 
 #connect-section i {
     font-size: 50px;
-    color: var(--hot-pink-color);
+    color: #ff6699;
 }
 
 #connect-section i:hover {
@@ -422,7 +420,7 @@ footer {
 
 @media screen and (max-width:715px) {
     :root {
-        --main-font-size: 11pt;
+        --font-size: 11pt;
     }
 
     #introduction h1 {
@@ -488,7 +486,7 @@ footer {
 
     .close-btn {
         font-size: 25px;
-        color: var(--main-text-color);
+        color: var(--white);
         position: absolute;
         top: 34px;
         right: 20%;
