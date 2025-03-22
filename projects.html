@@ -3,91 +3,135 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Amy Huang Software Portfolio Projects">
-    <link rel="icon" href="static/images/letterA.jpg">
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="static/css/dark.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Projects</title>
+    <title>Amy Huang</title>
 </head>
-<body class="dark-mode || light-mode">
-    <div class="row">
-        <!-- Left Column -->
-        <div id="left-column" class="column">
-            <div id="left-content">
-                <a id="dark-mode-toggle" style="cursor: pointer;"><img src="https://img.icons8.com/?size=40&id=12pSX0pLuMYM&format=png&color=000000"></a>
-                <div id="profile">
-                    <h1 style="margin-bottom: 8px;">Amy L Huang</h1>
-                    <p>A dedicated programmer with a keen focus on the topics of Artificial Intelligence and Full-Stack App Development.</p>
-                </div>
-                <div id="profile-card">
-                    <i class="fa fa-map-marker"> Buena Park, California, USA</i><br>
-                    <i class="fa fa-phone"> (714) 872-6859</i><br>
-                    <i class="fa fa-envelope"> amyhuang8119@gmail.com</i><br>
-                </div>
-                <div id="media-icons">
-                    <a class="media-icon" href="https://www.linkedin.com/in/amyhuang19/" target="_blank" aria-label="LinkedIn link"><i class="fa fa-linkedin-square"></i></a>
-                    <a class="media-icon" href="https://github.com/AmyLHuang/" target="_blank" aria-label="GitHub link"><i class="fa fa-github-square"></i></a>
-                </div>
+<body>
+    <div id="particles-container"></div>
+    <nav>
+        <a class="logo" href="index.html"><img src="static/images/logo.png" alt="logo" /></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="projects.html">Projects</a></li>
+        </ul>
+        <a class="button connect-link" href="https://www.linkedin.com/in/amyhuang19/" target="_blank">Connect With Me</a>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="side-menu">
+            <div class="close-btn" onclick="toggleMenu()">&#10006;</div>
+            <ul class="side-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Projects Display</h1>
+    <h2>Projects</h2>
+    <hr class="line" />
+    <section id="projects-section">
+        <div class="project">
+            <h3>Health20</h3>
+            <img src="static/images/projects/Health20/canvas.png" alt="project Health20 canvas" />
+            <p>Track your fitness health goals</p>
+            <div class="overlay">
+                <a href="#" target="_blank" class="disabled-link">Case Study <i class="fa fa-external-link"></i></a>
+                <a href="https://github.com/AmyLHuang/Health2O" target="_blank">GitHub <i class="fa fa-github"></i></a>
             </div>
         </div>
-        <!-- Right Column -->
-        <div id="right-column" class="column">
-            <div id="right-content">
-                <!-- Return Home -->
-                <div id="return-home-btn">
-                    <a class="underline" href="index.html"><i class="fa fa-long-arrow-left"></i> Return Home</a>
-                </div>
-                <!-- Projects -->
-                <h2 style="text-align: center;"> My Projects</h2>
-                <div class="project">
-                    <div class="proj-card">
-                        <div class="proj-info">
-                            <h3>MovieShop</h3>
-                            <p>A web application where users can browse and buy movies.<br>Implemented 20+ features, including a cart checkout backed by sessions, secure login using SHA256 hashing, full-text
-                            search and auto-complete backed by cache, and protection against SQL injection attacks via PreparedStatements. </p>
-                            <a href="https://github.com/AmyLHuang/MovieShop" target="_blank" class="underline">View on GitHub</a>
-                        </div>
-                    </div>
-                    <div class="proj-tech-stack">
-                        <p>Java - MySQL - AWS - Maven - Tomcat</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="proj-card">
-                        <img src="static/images/project-logos/health20_logo.png" alt="Health2O Project Logo"/>
-                        <div class="proj-info">
-                            <h3>Health2O</h3>
-                            <p>A wellness advisor app focused on three essential wellness categories: exercise, sleep, and hydration. Our mission is to help users lead healthier lives by providing a comprehensive solution to manage and improve these critical areas.</p>
-                            <a href="https://github.com/AmyLHuang/Health2O" target="_blank" class="underline">View on GitHub</a>
-                        </div>
-                    </div>
-                    <div class="proj-tech-stack">
-                        <p>React Native - Firebase - MongoDB - Expo Go</p>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="proj-card">
-                        <img src="static/images/letterA.jpg" alt="Portfolio Project Logo"/>
-                        <div class="proj-info">
-                            <h3>Portfolio</h3>
-                            <p>This website I created to showcase my work.</p>
-                            <a href="https://github.com/AmyLHuang/AmyLHuang.github.io" target="_blank" class="underline">View on GitHub</a>
-                        </div>
-                    </div>
-                    <div class="proj-tech-stack">
-                        <p>HTML - CSS - JavaScript</p>
-                    </div>
-                </div>
-                <!-- Footer Notes -->
-                <footer id="footer-notes">
-                    <small>Website created using HTML, CSS, and JS.<br>
-                        © 2025 Amy Huang. All rights reserved.</small>
-                </footer>
+        <div class="project">
+            <h3>Portfolio</h3>
+            <img src="static/images/projects/Portfolio/website-home.png" alt="project Portfolio home page" />
+            <p>this.website</p>
+            <div class="overlay">
+                <a href="#" target="_blank" class="disabled-link">Case Study <i class="fa fa-external-link"></i></a>
+                <a href="https://github.com/AmyLHuang/AmyLHuang.github.io" target="_blank">GitHub <i class="fa fa-github"></i></a>
             </div>
         </div>
-    </div>
+        <div class="project">
+            <h3>MovieShop</h3>
+            <img src="static/images/projects/MovieShop/genre-page.png" alt="project MovieShop genre page" />
+            <p>Browse and shop for movies</p>
+            <div class="overlay">
+                <a href="#" target="_blank" class="disabled-link">Case Study <i class="fa fa-external-link"></i></a>
+                <a href="https://github.com/AmyLHuang/MovieShop" target="_blank">GitHub <i class="fa fa-github"></i></a>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Stock Trading Bot</h3>
+            <img src="." alt="" />
+            <p>Using historical data to predict future stock prices</p>
+            <div class="overlay">
+                <a href="#" target="_blank" class="disabled-link">Case Study <i class="fa fa-external-link"></i></a>
+                <a href="https://github.com/AmyLHuang/Stock-Trading-Bot" target="_blank">GitHub <i class="fa fa-github"></i></a>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Web Crawler</h3>
+            <img src="." alt="" />
+            <p>Crawl through the web by following links, started at uci.edu</p>
+            <div class="overlay">
+                <a href="#" target="_blank" class="disabled-link">Case Study <i class="fa fa-external-link"></i></a>
+                <a href="https://github.com/AmyLHuang/webcrawler" target="_blank">GitHub <i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <h2>Tech Stack</h2>
+    <hr class="line" />
+    <section id="tech-section">
+        <div>
+            <img src="https://img.icons8.com/?size=40&id=13441&format=png&color=000000" alt="Python logo" />
+            <p>Python</p>
+        </div>
+        <div>
+            <img src="https://img.icons8.com/?size=40&id=1476&format=png&color=000000" alt="MySQL logo" />
+            <p>SQL</p>
+        </div>
+        <div>
+            <img src="https://img.icons8.com/?size=40&id=13679&format=png&color=000000" alt="Java logo" />
+            <p>Java</p>
+        </div>
+        <div>
+            <img src="https://img.icons8.com/?size=40&id=20909&format=png&color=000000" alt="HTML logo" />
+            <p>HTML</p>
+        </div>
+        <div>
+            <img src="https://img.icons8.com/?size=40&id=21278&format=png&color=000000" alt="CSS logo" />
+            <p>CSS</p>
+        </div>
+        <div>
+            <img src="https://img.icons8.com/?size=40&id=108784&format=png&color=000000" alt="JavaScript logo" />
+            <p>JavaScript</p>
+        </div>
+        <div>
+            <img src="https://img.icons8.com/?size=40&id=40669&format=png&color=000000" alt="Cpp logo" />
+            <p>C++</p>
+        </div>
+        <div>
+            <img src="https://img.icons8.com/?size=40&id=58811&format=png&color=000000" alt="React Native logo" />
+            <p>React</p>
+        </div>
+        <div>
+            <img src="https://img.icons8.com/?size=40&id=62452&format=png&color=000000" alt="Firebase logo" />
+            <p>Firebase</p>
+        </div>
+        <div>
+            <img src="https://img.icons8.com/?size=40&id=bosfpvRzNOG8&format=png&color=000000" alt="MongoDB logo" />
+            <p>MongoDB</p>
+        </div>
+        <!-- <div>
+            <img src="https://img.icons8.com/?size=40&id=9Kvi1p1F0tUo&format=png&color=000000" alt="Tableau logo" />
+            <p>Tableau</p>
+        </div> -->
+        <!-- <div>
+            <img src="https://img.icons8.com/?size=40&id=qYfwpsRXEcpc&format=png&color=000000" alt="Tableau logo" />
+            <p>Power BI</p>
+        </div> -->
+    </section>
+    <footer>
+        Tech Stack Icons by <a href="https://icons8.com/">Icons8</a>.<br>
+        © 2025 Amy Huang. All rights reserved.
+    </footer>
 
-    <script type="text/javascript" src="static/js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
