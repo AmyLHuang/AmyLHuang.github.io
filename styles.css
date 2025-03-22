@@ -236,6 +236,11 @@ nav {
     list-style: none;
 }
 
+.about-links-list a {
+    display: inline-block;
+    padding-left: 2ch;
+}
+
 .fakeScreen p:nth-child(odd) {
     color: #4CAF50;
 }
