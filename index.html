@@ -5,31 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="static/images/letterA.jpg">
+    <link rel="icon" href="static/images/favicon.png">
     <title>Amy Huang</title>
 </head>
 <body>
-    <a href="#main-content" style="display: none;">Skip to main content</a>
+    <a class="skip-to-content-link" href="#main-content">Skip to content</a>
     <div id="particles-container"></div>
-    <nav>
-        <a class="logo" href="index.html"><img src="static/images/logo.png" alt="logo"></a>
+    <nav class="top-nav">
+        <!-- <a class="logo" href="index.html"><img src="static/images/logo.png" alt="logo"></a> -->
         <ul class="nav-links">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li class="first-nav-link"><a href="#intro-section">Amy Huang</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#work-experience-section">Work Experience</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#tech-stack-section">Tech Stack</a></li>
         </ul>
-        <a class="button connect-link" href="https://www.linkedin.com/in/amyhuang19/" target="_blank">Connect With Me</a>
         <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
         <div class="side-menu">
             <div class="close-btn" onclick="toggleMenu()"><i class="fa fa-close"></i></div>
             <ul class="side-nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li class="first-nav-link"><a href="#intro-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#work-experience-section">Work Experience</a></li>
+                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#tech-stack-section">Tech Stack</a></li>
             </ul>
         </div>
     </nav>
-    <main id="main-content">
-        <section id="introduction">
-            <h1>I'm <span class="orange-text">Amy Huang</span>, <br> Data Analyst and Web Developer.</h1>
+    <main class="main-content">
+        <section id="intro-section">
+            <h1>Hi, I'm <span class="orange-text">Amy Huang</span>. <br> Data Analyst and Web Developer.</h1>
             <p>I am a software developer located in <i class="fa fa-map-marker"></i> California, USA.</p>
             <div class="intro-btns">
                 <a class="button" href="https://www.linkedin.com/in/amyhuang19/" target="_blank"><i class="fa fa-handshake-o"></i> Connect with me</a>
@@ -53,23 +58,15 @@
                 <p>> self.education</p>
                 <p>&nbsp;&nbsp;&nbsp; UC Irvine, Class of 2024, B.S. Computer Science</p>
                 <p>> self.hobbies</p>
-                <p>&nbsp;&nbsp;&nbsp; Reading, Watching YouTube, Badminton, Listening to Music</p>
+                <p>&nbsp;&nbsp;&nbsp; Watch YouTube, Play Badminton, Listen to Music</p>
                 <p>> self.resume</p>
-                <ul class="about-links-list">
-                    <li><a href="static/resumes/Resume-Huang-Amy.pdf" target="_blank">General</a></li>
-                    <li><a href="static/resumes/Resume-Huang-Amy-Beautified.pdf" target="_blank">Beautified</a></li>
-                    <!-- WebDev, DataAnalyst -->
-                </ul>
+                <p>&nbsp;&nbsp;&nbsp; [<a href="static/resumes/Resume-Huang-Amy.pdf" target="_blank"><span class="link-icon">🔗</span>General</a>, <a href="static/resumes/Resume-Huang-Amy-Beautified.pdf" target="_blank"><span class="link-icon">🔗</span>Beautified</a>]</p>
                 <p>> self.certificates</p>
-                <ul class="about-links-list">
-                    <li><a href="static/certificates/certificate_sas1.png" target="_blank">SAS:Essentials 1</a></li>
-                    <li><a href="static/certificates/certificate-advanced-software-engineering-codepath.pdf" target="_blank">Codepath Advanced Software Engineering</a></li>
-                    <li><a href="static/certificates/certificate-andriod-dev-codepath.pdf" target="_blank">Codepath Android Development</a></li>
-                </ul>
+                <p>&nbsp;&nbsp;&nbsp; [<a href="static/certificates/certificate_sas1.png" target="_blank"><span class="link-icon">🔗</span>SAS:Essentials 1</a>, <a href="static/certificates/certificate-advanced-software-engineering-codepath.pdf" target="_blank"><span class="link-icon">🔗</span>Codepath Advanced Software Engineering</a>, <a href="static/certificates/certificate-andriod-dev-codepath.pdf" target="_blank"><span class="link-icon">🔗</span>Codepath Android Development</a>]</p>
                 <p>> </p>
             </div>
         </section>
-        <section id="experience-section">
+        <section id="work-experience-section">
             <h2>Work Experience</h2>
             <hr class="line">
             <div class="experience">
@@ -101,36 +98,110 @@
             </div>
         </section>
         <section id="projects-section">
-            <h2>Selected Projects</h2>
+            <h2>Projects</h2>
             <hr class="line">
             <div class="projects">
                 <div class="project">
-                    <h3>Health20</h3>
-                    <img src="static/images/projects/Health20/canvas.png" alt="project Health20 canvas">
-                    <p>Track your fitness health goals</p>
+                    <h3>MyPortfolio</h3>
+                    <img src="static/images/projects/Screenshot 2025-04-21.png" alt="project Portfolio home page">
+                    <p>MyPortfolio is a web application where users can display their work experience and projects. It is created purely on HTML, CSS, and JavaScript.</p>
                     <div class="overlay">
-                        <a href="#" target="_blank" class="disabled-link"><i class="fa fa-external-link"></i> Case Study</a>
-                        <a href="https://github.com/AmyLHuang/Health2O" target="_blank"><i class="fa fa-github"></i> GitHub</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3>Portfolio</h3>
-                    <img src="static/images/projects/Portfolio/website-home.png" alt="project Portfolio home page">
-                    <p>this.website</p>
-                    <div class="overlay">
-                        <a href="#" target="_blank" class="disabled-link"><i class="fa fa-external-link"></i> Case Study</a>
-                        <a href="https://github.com/AmyLHuang/AmyLHuang.github.io" target="_blank"><i class="fa fa-github"></i>
-                            GitHub</a>
+                        <a class="button" href="#" target="_blank">Case Study <i class="fa fa-external-link"></i></a>
+                        <a class="button" href="https://github.com/AmyLHuang/AmyLHuang.github.io" target="_blank">GitHub <i class="fa fa-github"></i></a>
                     </div>
                 </div>
                 <div class="project">
                     <h3>MovieShop</h3>
                     <img src="static/images/projects/MovieShop/genre-page.png" alt="project MovieShop genre page">
-                    <p>Browse and shop for movies</p>
+                    <p>MovieShop is a web application where users can browse and shop for movies. The main functionality is maintained by Java Servlets and all the data is stored in a SQL database.</p>
                     <div class="overlay">
-                        <a href="#" target="_blank" class="disabled-link"><i class="fa fa-external-link"></i> Case Study</a>
-                        <a href="https://github.com/AmyLHuang/MovieShop" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+                        <a class="button" href="#" target="_blank">Case Study <i class="fa fa-external-link"></i></a>
+                        <a class="button" href="https://github.com/AmyLHuang/MovieShop" target="_blank">GitHub <i class="fa fa-github"></i></a>
                     </div>
+                </div>
+                <div class="project">
+                    <h3>Health20</h3>
+                    <img src="static/images/projects/Health20/canvas.png" alt="project Health20 canvas">
+                    <p>Health20 is a mobile application used to improve the user's fitness habits. It focuses on 3 key areas: sleep, exercise, and hydration.</p>
+                    <div class="overlay">
+                        <a class="button" href="#" target="_blank">Case Study <i class="fa fa-external-link"></i></a>
+                        <a class="button" href="https://github.com/AmyLHuang/Health2O" target="_blank">GitHub <i
+                                class="fa fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Stock Trading Bot</h3>
+                    <img src="." alt="">
+                    <p>Using historical data to predict future stock prices</p>
+                    <div class="overlay">
+                        <a class="button" href="#" target="_blank">Case Study <i class="fa fa-external-link"></i></a>
+                        <a class="button" href="https://github.com/AmyLHuang/Stock-Trading-Bot" target="_blank">GitHub <i
+                                class="fa fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Web Crawler + Search Engine</h3>
+                    <img src="." alt="">
+                    <p>Crawl through the web by following links, started at uci.edu</p>
+                    <div class="overlay">
+                        <a class="button" href="#" target="_blank">Case Study <i class="fa fa-external-link"></i></a>
+                        <a class="button" href="https://github.com/AmyLHuang/webcrawler" target="_blank">GitHub <i
+                                class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tech-stack-section">
+            <h2>Tech Stack</h2>
+            <hr class="line">
+            <div class="techs">
+                <div>
+                    <img src="https://img.icons8.com/?size=40&id=13441&format=png&color=000000" alt="Python logo">
+                    <p>Python</p>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/?size=40&id=1476&format=png&color=cccccc" alt="SQL logo">
+                    <p>SQL</p>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/?size=40&id=13679&format=png&color=000000" alt="Java logo">
+                    <p>Java</p>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/?size=40&id=20909&format=png&color=000000" alt="HTML logo">
+                    <p>HTML</p>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/?size=40&id=21278&format=png&color=000000" alt="CSS logo">
+                    <p>CSS</p>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/?size=40&id=108784&format=png&color=000000" alt="JavaScript logo">
+                    <p>JavaScript</p>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/?size=40&id=40669&format=png&color=000000" alt="Cpp logo">
+                    <p>C++</p>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/?size=40&id=123603&format=png&color=000000" alt="React Native logo">
+                    <p>React</p>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/?size=40&id=62452&format=png&color=000000" alt="Firebase logo">
+                    <p>Firebase</p>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/?size=40&id=bosfpvRzNOG8&format=png&color=000000" alt="MongoDB logo">
+                    <p>MongoDB</p>
+                </div>
+                <!-- <div>
+                            <img src="https://img.icons8.com/?size=40&id=9Kvi1p1F0tUo&format=png&color=000000" alt="Tableau logo">
+                            <p>Tableau</p>
+                        </div> -->
+                <div>
+                    <img src="https://img.icons8.com/?size=40&id=qYfwpsRXEcpc&format=png&color=000000" alt="Power BI logo">
+                    <p>Power BI</p>
                 </div>
             </div>
         </section>
@@ -150,6 +221,7 @@
         </section>
     </main>
     <footer>
+        Tech Stack Icons by <a href="https://icons8.com/">Icons8</a>.<br>
         © 2025 Amy Huang. All rights reserved.
     </footer>
 

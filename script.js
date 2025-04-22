@@ -64,11 +64,3 @@ function toggleMenu(event) {
         document.removeEventListener('click', closeOnClickOutside);
     }
 }
-
-
-// For disabled links
-document.querySelectorAll('.disabled-link').forEach(link => {
-    link.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevents navigation
-    });
-});
