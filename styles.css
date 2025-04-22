@@ -361,7 +361,7 @@ a {
 
 .techs div {
     background-color: #222;
-    padding: 1rem;
+    padding: 1ch;
     color: white;
     text-align: center;
 }
@@ -375,13 +375,13 @@ footer {
 
 /* Responsiveness */
 
-@media (min-width: 850px) {
+@media (min-width: 900px) {
     .projects {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media screen and (max-width:715px) {
+@media screen and (max-width:900px) {
     :root {
         --font-size: 12pt;
     }
