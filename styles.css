@@ -9,9 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 
-*,
-*:after,
-*:before {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -57,7 +55,7 @@ a {
     text-transform: uppercase;
     letter-spacing: 1px;
     display: inline-block;
-    font-weight: 700;
+    font-weight: 500;
     border-radius: 10px;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
     transition: transform .3s;
@@ -321,7 +319,7 @@ a {
 
 .project img {
     margin: 10px 0;
-    width: 100%;
+    max-width: 100%;
 }
 
 /* Connect Section */
