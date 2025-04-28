@@ -2,7 +2,7 @@
     /* --bg-color: #101010; */
     --font-size: 14pt;
     --white: #f8f8f8;
-    --primary-color: #3300ff;
+    --link-color: #3300ff;
 }
 
 html {
@@ -50,7 +50,7 @@ a {
 .button {
     padding: 1em;
     font-size: 0.8rem;
-    background: var(--primary-color);
+    background: var(--link-color);
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -93,7 +93,7 @@ a {
 }
 
 .nav-links a:hover {
-    color: var(--primary-color);
+    color: var(--link-color);
 }
 
 .side-menu.open {
@@ -238,7 +238,7 @@ a {
 }
 
 .fakeScreen a {
-    color: var(--primary-color);
+    color: var(--link-color);
 }
 
 .link-icon {
@@ -290,7 +290,7 @@ a {
 .experience-link a {
     width: fit-content;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--link-color);
 }
 
 /* Projects Section */
@@ -337,7 +337,7 @@ a {
 
 #connect-section i {
     font-size: 50px;
-    color: var(--primary-color);
+    color: var(--link-color);
 }
 
 #connect-section i:hover {
