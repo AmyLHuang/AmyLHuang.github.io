@@ -1,8 +1,16 @@
 :root {
-    /* --bg-color: #101010; */
+    --bg: #f5f7fa;
+    --text-color: #222;
+    --card-bg: #ffffff;
     --font-size: 14pt;
-    --white: #f8f8f8;
     --link-color: #3300ff;
+}
+
+body.dark {
+    --bg: #121212;
+    --text-color: #e0e0e0;
+    --card-bg: #1e1e1e;
+    --link-color: #9378ff;
 }
 
 html {
@@ -16,9 +24,10 @@ html {
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: var(--bg);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: var(--font-size);
+    color: var(--text-color);
 }
 
 h2 {
@@ -27,7 +36,7 @@ h2 {
 }
 
 a {
-    color: black;
+    color: var(--text-color);
     text-decoration: none;
     cursor: pointer;
 }
@@ -66,10 +75,7 @@ a {
     transform: translateY(-3px);
 }
 
-.project-links {
-    margin-top: 2rem;
-    text-align: center;
-}
+
 
 /* Top Nav */
 
@@ -81,7 +87,7 @@ a {
 
 .nav-links {
     display: flex;
-    background-color: white;
+    background-color: var(--card-bg);
     padding: 1em 2em;
     align-items: center;
     gap: 2em;
@@ -94,6 +100,12 @@ a {
 
 .nav-links a:hover {
     color: var(--link-color);
+}
+
+.mode-toggle {
+    background-color: var(--card-bg);
+    padding: 0.2rem;
+    border-radius: 50%;
 }
 
 .side-menu.open {
@@ -124,8 +136,8 @@ a {
     align-content: center;
     text-align: center;
     --s: 235px;
-    --c1: #ffffff;
-    --c2: #f8f8f8;
+    --c1: var(--card-bg);
+    --c2: var(--bg);
     --_g: #0000 8%, var(--c1) 0 17%, #0000 0 58%;
     background:
         linear-gradient(135deg, #0000 20.5%, var(--c1) 0 29.5%, #0000 0) 0 calc(var(--s)/4),
@@ -155,6 +167,7 @@ a {
     gap: 0.5rem;
     justify-content: center;
 }
+
 
 /* About Me Section */
 
@@ -203,7 +216,6 @@ a {
     padding: 20px;
     background: #ffffff1a;
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     border-radius: 0 0 16px 16px;
     border: 1px solid #ffffff4d;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -233,7 +245,7 @@ a {
     width: 2px;
     height: 18px;
     margin-bottom: -4px;
-    background-color: black;
+    background-color: var(--text-color);
     animation: blink 1.7s step-start infinite;
 }
 
@@ -307,46 +319,39 @@ a {
 
 .projects {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.2rem;
-
 }
 
 .project {
-    text-align: center;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 1rem;
-    box-shadow: 0 4px 12px #bbb;
-    position: relative;
-}
-
-.project img {
-    margin: 10px 0;
-    max-width: 100%;
-}
-
-/* Connect Section */
-
-#connect-section {
-    margin: 1rem;
-}
-
-.connect-section-links {
     display: flex;
-    gap: .5rem;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    background: #ffffff1a;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.proj-img-container {
+    flex: 1;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
 }
 
-#connect-section i {
-    font-size: 50px;
-    color: var(--link-color);
+.proj-img-container img {
+    max-height: 200px;
+    max-width: 98%;
+    object-fit: contain;
 }
 
-#connect-section i:hover {
-    color: #00006f;
+.project-links {
+    margin-top: 1rem;
 }
+
 
 /* Tech Stack Section */
 #tech-stack-section {
@@ -368,6 +373,30 @@ a {
     text-align: center;
 }
 
+
+/* Connect Section */
+
+#connect-section {
+    margin: 1rem;
+}
+
+.connect-section-links {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#connect-section i {
+    font-size: 50px;
+    color: var(--link-color);
+}
+
+#connect-section i:hover {
+    color: hsl(var(--link-color), 50%, 40%);;
+}
+
+
 /* Footer */
 
 footer {
@@ -375,13 +404,11 @@ footer {
     margin: 2rem;
 }
 
-/* Responsiveness */
-
-@media (min-width: 900px) {
-    .projects {
-        grid-template-columns: 1fr 1fr;
-    }
+#notes-link {
+    color: var(--bg);
 }
+
+/* Responsiveness */
 
 @media screen and (max-width:900px) {
     :root {
@@ -398,6 +425,10 @@ footer {
 
     .experience {
         flex-direction: column;
+    }
+
+    .experience h3, .experience p {
+        text-align: center;
     }
 
     .experience img {
@@ -427,7 +458,7 @@ footer {
         left: -250px;
         width: 250px;
         height: 100%;
-        background-color: #eeeeee;
+        background-color: var(--card-bg);
         transition: left 0.5s ease;
         z-index: 10;
     }

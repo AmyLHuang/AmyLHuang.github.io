@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="notes.css">
+    <link rel="icon" href="static/images/favicon.png">
+    <title>Amy Huang</title>
+</head>
+<body>
+    <!-- Top bar with tabs + mode toggle -->
+    <div id="topbar">
+        <div id="tabs">
+            <div class="active" onclick="loadNotes('AI', this)">AI</div>
+            <div onclick="loadNotes('python', this)">Python</div>
+            <div onclick="loadNotes('data', this)">Data Analysis</div>
+            <div onclick="loadNotes('bi', this)">BI</div>
+        </div>
+        <button id="mode-toggle" onclick="toggleMode()">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Main layout -->
+    <div id="main">
+        <div id="notes-container">
+            <div id="notes"></div>
+        </div>
+        <div id="toc"></div>
+    </div>
+
+    <script>
+        async function loadNotes(section, tabElement) {
+            try {
+                const res = await fetch(`${section}.html`);
+                const html = await res.text();
+                document.getElementById('notes').innerHTML = html;
+                generateTOC();
+
+                // highlight active tab
+                document.querySelectorAll('#tabs div').forEach(tab => tab.classList.remove('active'));
+                tabElement.classList.add('active');
+            } catch (err) {
+                document.getElementById('notes').innerHTML = "<p>Error loading notes.</p>";
+            }
+        }
+
+
+        function generateTOC() {
+            const notes = document.getElementById('notes');
+            const headers = notes.querySelectorAll('h2, h3');
+            let tocHTML = "<h3>Table of Contents</h3><ul>";
+            headers.forEach((header, i) => {
+                const id = "header-" + i;
+                header.id = id;
+                tocHTML += `<li><a href="#${id}">${header.innerText}</a></li>`;
+            });
+            tocHTML += "</ul>";
+            document.getElementById('toc').innerHTML = tocHTML;
+        }
+
+        function toggleMode() {
+            document.body.classList.toggle("dark");
+            const btn = document.getElementById("mode-toggle");
+            if (document.body.classList.contains("dark")) {
+                btn.textContent = "☀️ Light Mode";
+            } else {
+                btn.textContent = "🌙 Dark Mode";
+            }
+        }
+
+        // Load default (AI) on page load
+        window.onload = () => loadNotes('AI', document.querySelector('#tabs div'));
+    </script>
+</body>
+
+</html>

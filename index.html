@@ -18,6 +18,7 @@
             <li><a href="#work-experience-section">Work Experience</a></li>
             <li><a href="#projects-section">Projects</a></li>
             <li><a href="#tech-stack-section">Tech Stack</a></li>
+            <button class="mode-toggle">☀️</button>
         </ul>
         <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
         <div class="side-menu">
@@ -28,6 +29,7 @@
                 <li><a href="#work-experience-section">Work Experience</a></li>
                 <li><a href="#projects-section">Projects</a></li>
                 <li><a href="#tech-stack-section">Tech Stack</a></li>
+                <button class="mode-toggle">☀️</button>
             </ul>
         </div>
     </nav>
@@ -37,7 +39,7 @@
             <p>I am a software developer located in <i class="fa fa-map-marker"></i> California, USA.</p>
             <div class="intro-btns">
                 <a class="button" href="https://www.linkedin.com/in/amyhuang19/" target="_blank"><i class="fa fa-handshake-o"></i> Connect with me</a>
-                <a class="button" href="static/resumes/Resume_Huang_Amy.pdf" download><i class="fa fa-download"></i> Download Resume</a>
+                <a class="button" href="static/resumes/Resume_AmyLHuang.pdf" download><i class="fa fa-download"></i> Download Resume</a>
             </div>
         </section>
         <hr class="divider">
@@ -59,7 +61,7 @@
                 <p>> self.hobbies</p>
                 <p>&nbsp;&nbsp;&nbsp; Watch YouTube, Play Badminton, Listen to Music</p>
                 <p>> self.resume</p>
-                <p>&nbsp;&nbsp;&nbsp; [<a href="static/resumes/Resume_Huang_Amy.pdf"><span class="link-icon">🔗</span>Main</a>, <a href="static/resumes/Resume-Huang-Amy-Beautified.pdf"><span class="link-icon">🔗</span>2-Columns</a>]</p>
+                <p>&nbsp;&nbsp;&nbsp; [<a href="static/resumes/Resume_AmyLHuang.pdf"><span class="link-icon">🔗</span>Main</a>, <a href="static/resumes/Resume-Huang-Amy-Beautified.pdf"><span class="link-icon">🔗</span>2-Columns</a>]</p>
                 <p>> self.certificates</p>
                 <p>&nbsp;&nbsp;&nbsp; [<a href="static/certificates/certificate_sas1.png"><span class="link-icon">🔗</span>SAS:Essentials 1</a>, <a href="static/certificates/certificate-advanced-software-engineering-codepath.pdf"><span class="link-icon">🔗</span>Codepath Advanced Software Engineering</a>, <a href="static/certificates/certificate-andriod-dev-codepath.pdf"><span class="link-icon">🔗</span>Codepath Android Development</a>]</p>
                 <p>> </p>
@@ -87,7 +89,7 @@
                 <img src="static/images/work/uci-logo.png" alt="work uci logo">
                 <div class="experience-info">
                     <h3>UC Irvine, Donald Bren School of Information & Computer Science</h3>
-                    <p>ICS Tutor</p>
+                    <p>Information & Computer Science Tutor</p>
                     <p>Oct 2023 - June 2024 (9 months)</p>
                     <ul>
                         <li>Coordinated with a supervisor and 11 other students to provide a free help center for undergrads who had any questions on course material</li>
@@ -102,17 +104,31 @@
             <div class="projects">
                 <div class="project">
                     <h3>MyPortfolio</h3>
-                    <img src="static/images/projects/Portfolio/portfolio_home-v4.png" alt="project Portfolio home page">
-                    <p>Web application where users can showcase their work experience and projects. It is created purely on HTML, CSS, and JavaScript.</p>
+                    <div class="proj-img-container">
+                        <img src="static/images/projects/Portfolio/portfolio_home-v4.png" alt="project Portfolio home page">
+                    </div>
+                    <!-- <p>Web application where users can showcase their work experience and projects. It is created purely on HTML, CSS, and JavaScript.</p> -->
                     <div class="project-links">
                         <a class="button" href="case_studies/MyPortfolio.html">&#x1F4DD; Case Study</a>
                         <a class="button" href="https://github.com/AmyLHuang/AmyLHuang.github.io" target="_blank"><i class="fa fa-github"></i> GitHub</a>
                     </div>
                 </div>
                 <div class="project">
+                    <h3>Power BI Dashboards</h3>
+                    <div class="proj-img-container">
+                        <img src="static/images/projects/PowerBI/cookies_sold.png" alt="">
+                    </div>
+                    <!-- <p>Dashboards created in Power BI Desktop.</p> -->
+                    <div class="project-links">
+                        <a class="button" href="case_studies/PowerBI.html">&#x1F4DD; Case Study</a>
+                    </div>
+                </div>
+                <div class="project">
                     <h3>MovieShop</h3>
-                    <img src="static/images/projects/MovieShop/genre-page.png" alt="project MovieShop genre page">
-                    <p>Web application where users can browse and shop for movies. The main functionality is maintained by Java Servlets and all the data is stored in a SQL database.</p>
+                    <div class="proj-img-container">
+                        <img src="static/images/projects/MovieShop/genre-page.png" alt="project MovieShop genre page">
+                    </div>
+                    <!-- <p>Web application where users can browse and shop for movies. The main functionality is maintained by Java Servlets and all the data is stored in a SQL database.</p> -->
                     <div class="project-links">
                         <a class="button" href="case_studies/MovieShop.html">&#x1F4DD; Case Study</a>
                         <a class="button" href="https://github.com/AmyLHuang/MovieShop" target="_blank"><i class="fa fa-github"></i> GitHub</a>
@@ -120,34 +136,32 @@
                 </div>
                 <div class="project">
                     <h3>Health2O</h3>
-                    <img src="static/images/projects/Health2O/canvas.png" alt="project Health2O canvas">
-                    <p>Mobile application used to improve the user's fitness habits. It focuses on 3 key areas: sleep, exercise, and hydration.</p>
+                    <div class="proj-img-container">
+                        <img src="static/images/projects/Health2O/canvas.png" alt="project Health2O canvas">
+                    </div>
+                <!-- <p>Mobile application used to improve the user's fitness habits. It focuses on 3 key areas: sleep, exercise, and hydration.</p> -->
                     <div class="project-links">
                         <a class="button" href="case_studies/Health2O.html">&#x1F4DD; Case Study</a>
                         <a class="button" href="https://github.com/AmyLHuang/Health2O" target="_blank"><i class="fa fa-github"></i> GitHub</a>
                     </div>
                 </div>
                 <div class="project">
-                    <h3>Power BI Dashboards</h3>
-                    <img src="static/images/projects/PowerBI/cookies_sold.png" alt="">
-                    <p>Dashboards created in Power BI Desktop.</p>
-                    <div class="project-links">
-                        <a class="button" href="case_studies/PowerBI.html">&#x1F4DD; Case Study</a>
-                    </div>
-                </div>
-                <div class="project">
                     <h3>Stock Trading Bot</h3>
-                    <img src="static/images/projects/StockTradingBot/ensemble_model.png" alt="project Stock Trading Bot result chart">
-                    <p>Using historical data to predict future stock prices</p>
+                    <div class="proj-img-container">
+                        <img src="static/images/projects/StockTradingBot/ensemble_model.png" alt="project Stock Trading Bot result chart">
+                    </div>
+                <!-- <p>Using historical data to predict future stock prices</p> -->
                     <div class="project-links">
                         <a class="button" href="case_studies/StockTradingBot.html">&#x1F4DD; Case Study</a>
                         <a class="button" href="https://github.com/AmyLHuang/Stock-Trading-Bot" target="_blank"><i class="fa fa-github"></i> GitHub</a>
                     </div>
                 </div>
                 <div class="project">
-                    <h3>Web Crawler + Search Engine</h3>
-                    <img src="static/images/projects/SearchEngine/home_page.png" alt="project Search Engine search UI home page">
-                    <p>Built a web crawler to index sites starting from uci.edu and a search engine to return relevant results based on user queries.</p>
+                    <h3>Search Engine</h3>
+                    <div class="proj-img-container">
+                        <img src="static/images/projects/SearchEngine/home_page.png" alt="project Search Engine search UI home page">
+                    </div>
+                <!-- <p>Built a web crawler to index sites starting from uci.edu and a search engine to return relevant results based on user queries.</p> -->
                     <div class="project-links">
                         <a class="button" href="case_studies/SearchEngine.html">&#x1F4DD; Case Study</a>
                         <a class="button" href="https://github.com/AmyLHuang/SearchEngine" target="_blank"><i class="fa fa-github"></i> GitHub</a>
@@ -166,6 +180,10 @@
                 <div>
                     <img src="https://img.icons8.com/?size=40&id=1476&format=png&color=cccccc" alt="SQL logo">
                     <p>SQL</p>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/?size=40&id=qYfwpsRXEcpc&format=png&color=000000" alt="Power BI logo">
+                    <p>Power BI</p>
                 </div>
                 <div>
                     <img src="https://img.icons8.com/?size=40&id=13679&format=png&color=000000" alt="Java logo">
@@ -203,10 +221,7 @@
                             <img src="https://img.icons8.com/?size=40&id=9Kvi1p1F0tUo&format=png&color=000000" alt="Tableau logo">
                             <p>Tableau</p>
                         </div> -->
-                <div>
-                    <img src="https://img.icons8.com/?size=40&id=qYfwpsRXEcpc&format=png&color=000000" alt="Power BI logo">
-                    <p>Power BI</p>
-                </div>
+                
             </div>
         </section>
         <hr class="divider">
@@ -220,13 +235,13 @@
                         class="fa fa-github-square"></i></a>
                 <a href="mailto:amyhuang8119@gmail.com" target="_blank" title="Email: amyhuang8119@gmail.com"> <i
                         class="fa fa-envelope-square"></i></a>
-
             </div>
         </section>
     </main>
     <footer>
         Tech Stack Icons by <a href="https://icons8.com/">Icons8</a>.<br>
-        © 2025 Amy Huang. All rights reserved.
+        © 2025 Amy Huang. All rights reserved.<br>
+        <a id="notes-link" href="notes/notes.html">Notes</a>
     </footer>
 
     <script src="script.js"></script>

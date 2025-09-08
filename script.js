@@ -64,3 +64,16 @@ function toggleMenu(event) {
         document.removeEventListener('click', closeOnClickOutside);
     }
 }
+
+// Dark / Light Mode Toggle
+
+const modeButtons = document.querySelectorAll(".mode-toggle");
+
+function toggleMode() {
+    document.body.classList.toggle("dark");
+    const icon = document.body.classList.contains("dark") ? "🌙" : "☀️";
+    modeButtons.forEach(btn => btn.textContent = icon);
+}
+
+modeButtons.forEach(btn => btn.addEventListener("click", toggleMode));
+
