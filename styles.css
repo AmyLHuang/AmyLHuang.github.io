@@ -334,6 +334,30 @@ a {
     transition: transform 0.2s ease;
 }
 
+#proj-1 {
+    box-shadow: 2px 4px 12px rgba(255, 0, 0, 0.5);
+}
+
+#proj-2 {
+    box-shadow: 2px 4px 12px rgba(0, 255, 17, 0.5);
+}
+
+#proj-3 {
+    box-shadow: 2px 4px 12px rgba(60, 0, 255, 0.5);
+}
+
+#proj-4 {
+    box-shadow: 2px 4px 12px rgba(255, 187, 0, 0.5);
+}
+
+#proj-5 {
+    box-shadow: 2px 4px 12px rgba(255, 0, 251, 0.5);
+}
+
+#proj-6 {
+    box-shadow: 2px 4px 12px rgba(0, 255, 221, 0.5);
+}
+
 .proj-img-container {
     flex: 1;
     display: flex;
