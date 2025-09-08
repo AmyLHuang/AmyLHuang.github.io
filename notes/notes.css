@@ -42,6 +42,7 @@ body {
 
 #tabs {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #tabs div {
@@ -140,4 +141,10 @@ body {
 
 #toc a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width:680px) {
+    #main {
+        flex-direction: column;
+    }
 }

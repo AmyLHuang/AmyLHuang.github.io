@@ -11,20 +11,20 @@
     <!-- Top bar with tabs + mode toggle -->
     <div id="topbar">
         <div id="tabs">
-            <div class="active" onclick="loadNotes('AI', this)">AI</div>
-            <div onclick="loadNotes('python', this)">Python</div>
+            <div class="active" onclick="loadNotes('ai', this)">AI</div>
             <div onclick="loadNotes('data', this)">Data Analysis</div>
             <div onclick="loadNotes('bi', this)">BI</div>
+            <div onclick="loadNotes('python', this)">Python</div>
         </div>
-        <button id="mode-toggle" onclick="toggleMode()">🌙 Dark Mode</button>
+        <button id="mode-toggle" onclick="toggleMode()">☀️</button>
     </div>
 
     <!-- Main layout -->
     <div id="main">
+        <div id="toc"></div>
         <div id="notes-container">
             <div id="notes"></div>
         </div>
-        <div id="toc"></div>
     </div>
 
     <script>
@@ -61,9 +61,9 @@
             document.body.classList.toggle("dark");
             const btn = document.getElementById("mode-toggle");
             if (document.body.classList.contains("dark")) {
-                btn.textContent = "☀️ Light Mode";
+                btn.textContent = "🌙";
             } else {
-                btn.textContent = "🌙 Dark Mode";
+                btn.textContent = "☀️";
             }
         }
 
