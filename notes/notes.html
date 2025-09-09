@@ -15,6 +15,8 @@
             <div onclick="loadNotes('data', this)">Data Analysis</div>
             <div onclick="loadNotes('bi', this)">BI</div>
             <div onclick="loadNotes('python', this)">Python</div>
+            <div onclick="loadNotes('coop', this)">COOP</div>
+            <div onclick="loadNotes('other', this)">Other</div>
         </div>
         <button id="mode-toggle" onclick="toggleMode()">☀️</button>
     </div>
@@ -68,7 +70,7 @@
         }
 
         // Load default (AI) on page load
-        window.onload = () => loadNotes('AI', document.querySelector('#tabs div'));
+        window.onload = () => loadNotes('ai', document.querySelector('#tabs div'));
     </script>
 </body>
 
