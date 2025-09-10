@@ -107,6 +107,15 @@ body {
     /* adjust height (px) */
 }
 
+#notes a {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+#notes a:hover {
+    text-decoration: underline;
+}
+
 /* TOC area */
 #toc {
     flex: 1;
