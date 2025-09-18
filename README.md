@@ -2,7 +2,7 @@ Link to Website: [https://amylhuang.github.io/](https://amylhuang.github.io/)
 
 ## About
 
-A website I created to showcase my work.
+A website I created from scratch to showcase my work.
 
 ## Tech Stack
 
@@ -13,3 +13,5 @@ A website I created to showcase my work.
 ## Additional Features
 
 - Responsive
+- Dark & Light Mode
+- Particles Following Mouse

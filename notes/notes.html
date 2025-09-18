@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="notes.css">
-    <link rel="icon" href="static/images/favicon.png">
-    <title>Amy Huang</title>
+    <link rel="icon" href="../static/images/favicon.png">
+    <title>Notes</title>
 </head>
 <body>
     <!-- Top bar with tabs + mode toggle -->
@@ -33,7 +33,7 @@
     <script>
         async function loadNotes(section, tabElement) {
             try {
-                const res = await fetch(`${section}.html`);
+                const res = await fetch(`topics/${section}.html`);
                 const html = await res.text();
                 document.getElementById('notes').innerHTML = html;
                 generateTOC();

@@ -1,0 +1,51 @@
+<h2>Data Analytics</h2>
+<p>
+    Data Analytics is the process of examing raw data, in the form of datasets, in order to draw conclusions about the info they contain. Some common tools used by data analysts are: Microsoft Excel, Google Sheets, Tableau, Microsoft
+    Power BI, SQL, Python, and R.
+</p>
+
+<h3>Data</h3>
+<p>Data is a collection of facts, figures, and observations presented in a structured or unstructured format. It provides the raw material for informed decision-making, innovation, and problem-solving.</p>
+<p>Data --> Knowledge --> Action.</p>
+<p>Data quality matter! Poor data quality can lead to inaccurate insights, flawed conclusions, and poor business decisions. Some core quality-checks to evaluate the quality of the data collected are:</p>
+<ol>
+    <li>Accuracy: Ensure the data is correct and free of errors.</li>
+    <li>Completeness: Having a complete dataset without missing values.</li>
+    <li>Consistency: Maintaining uniformity in data formats and definitions.</li>
+    <li>Relevance: Collecting data that is pertinent to the specific analysis or project.</li>
+</ol>
+
+<h3>Excel</h3>
+<p><u>Lock formulas</u><br>When we copy and paste/autofill formulas to other cells, the cell references can change, which may sometimes cause errors in our calculations. By locking formulas using the $ shortcut, it will prevent the cell reference from changing. Shortcut is F4.</p>
+<p><u>VLOOKUP (aka Vertical Lookup)</u><br>Syntax: <strong>=VLOOKUP(lookup_value, table_array, col_index_num, [is_exact_match])</strong></p>
+<ul>
+    <li>useful in finding and extracting info related to a certain identifier/look up value quickly</li>
+    <li>can be used to combine the data from various sources based on a shared key</li>
+    <li>col_index_num starts at 1</li>
+    <li>can only look for values to the right of the key column</li>
+    <li>only finds first match</li>
+</ul>
+<p><u>Index match</u><br>Syntax: <strong>=INDEX(result_array, MATCH(lookup_value, lookup_array, [match_type]))</strong></p>
+<ul>
+    <li>can look up values in columns to the left of the lookup column (unlike VLOOKUP)</li>
+    <li>The MATCH() function is used to find the row number where the lookup value is present in the lookup array. The INDEX() function then returns the value in the array at that row number.</li>
+</ul>
+<p><u>XLOOKUP</u><br>Syntax: <strong>=XLOOKUP()</strong></p>
+<p><u>HLOOKUP</u><br>Syntax: <strong>=HLOOKUP()</strong></p>
+
+
+<h3>Exploratory Data Analysis (EDA)</h3>
+<p>EDA is the process of investigating, organizing, and analyzing datasets and summarizing their main characteristics, often employing data wrangling and visualization methods. It is not a step-by-step process, but rather an iterative and non-sequential process.</p>
+<p>The six practices of EDA are:</p>
+<ul>
+    <li>Discovering: Familiarize with the data</li>
+    <li>Structuring: Take raw data and organize/transform it to be more easily visualized, explained, or modeled</li>
+    <li>Cleaning: Remove errors that might distort the data or make is less useful</li>
+    <li>Joining: Augument data by adding values from other datasets</li>
+    <li>Validating: Verify that the data is consistent and high quality</li>
+    <li>Presenting: Make a cleaned dataset available to others for analysis or further modeling</li>
+</ul>
+
+<h3>PACE Workflow</h3>
+<p>A workflow to help focus on the end goal of any given dataset. It stands for plan, analyze, construct, and execute.</p>
+

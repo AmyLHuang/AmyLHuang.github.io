@@ -33,6 +33,7 @@ body {
 h2 {
     margin: 2rem 0 1rem;
     text-align: center;
+    font-family: cursive;
 }
 
 a {
@@ -79,51 +80,108 @@ a {
 
 /* Top Nav */
 
-.top-nav {
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-}
-
-.nav-links {
+.navbar {
     display: flex;
-    background-color: var(--card-bg);
-    padding: 1em 2em;
+    justify-content: space-between;
     align-items: center;
-    gap: 2em;
-    list-style: none;
+    background: var(--card-bg);
+    padding: 1rem 2rem;
+    color: var(--text-color);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
-.first-nav-link {
-    margin-right: auto;
-}
-
-.nav-links a:hover {
+.navbar a:hover {
     color: var(--link-color);
+}
+
+.nav-left {
+    display: flex;
+    margin-right: auto;
+    gap: 1.5rem;
+}
+
+.nav-right {
+    display: flex;
+    gap: 1.5rem;
 }
 
 .mode-toggle {
     background-color: var(--card-bg);
+    margin: 0 1rem;
     padding: 0.2rem;
+    border: 1px solid var(--text-color);
     border-radius: 50%;
 }
 
-.side-menu.open {
-    left: 0;
-}
-
-.hamburger,
-.side-menu {
+/* Hamburger (hidden on big screens) */
+.hamburger {
     display: none;
-    
+    flex-direction: column;
+    cursor: pointer;
+    width: 25px;
+    height: 20px;
+    justify-content: space-between;
 }
 
-#intro-section,
+.hamburger span {
+    height: 3px;
+    width: 100%;
+    background: var(--text-color);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger active (turns into X) */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Dropdown menu */
+.dropdown {
+    overflow: hidden;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--card-bg);
+    position: absolute;
+    width: 100%;
+    transition: max-height 0.2s ease;
+}
+
+.dropdown a {
+    padding: 1rem 2rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background: var(--bg);
+}
+
+/* Expanded state */
+.dropdown.show {
+    max-height: 500px;
+    border-top: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+}
+
+/* Link Targets */
+
 #about-section,
+#tech-stack-section,
 #work-experience-section,
-#projects-section,
-#tech-stack-section {
-    scroll-margin-top: 80px;
+#projects-section {
+    scroll-margin-top: 5rem;
 }
 
 
@@ -447,6 +505,18 @@ footer {
         font-size: 9pt;
     }
 
+    .navbar {
+        position: relative;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
     .experience {
         flex-direction: column;
     }
@@ -457,64 +527,6 @@ footer {
 
     .experience img {
         align-self: center;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .hamburger {
-        display: block;
-        font-size: 2em;
-        cursor: pointer;
-        padding: 0.5em;
-        width: fit-content;
-    }
-
-    .side-menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        text-align: center;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: -250px;
-        width: 250px;
-        height: 100%;
-        background-color: var(--card-bg);
-        transition: left 0.5s ease;
-        z-index: 10;
-    }
-
-    .side-nav-links {
-        list-style-type: none;
-        padding: 20px 0;
-        margin-top: 60px;
-        width: 100%;
-    }
-
-    .side-nav-links li {
-        transition: background-color 0.3s ease;
-    }
-
-    .side-nav-links li a {
-        display: block;
-        font-weight: bold;
-        font-size: 14pt;
-        padding: 18px 0;
-    }
-
-    .side-nav-links li:hover {
-        background-color: #d3d3d3;
-    }
-
-    .close-btn {
-        font-size: 28px;
-        position: absolute;
-        top: 1em;
-        right: 1em;
-        cursor: pointer;
     }
 }
 
