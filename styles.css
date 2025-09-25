@@ -33,7 +33,6 @@ body {
 h2 {
     margin: 2rem 0 1rem;
     text-align: center;
-    font-family: cursive;
 }
 
 a {
@@ -335,6 +334,7 @@ a {
     padding: 2rem;
     border-radius: 6px;
     border-bottom: #bbb solid 3px;
+    background: var(--card-bg);
 }
 
 .experience img {
@@ -364,7 +364,7 @@ a {
 }
 
 #work-experience-section .experience:first-of-type {
-    padding: 0 2rem 2rem 2rem;
+    /* padding: 2rem 2rem 2rem 2rem; */
 }
 
 /* Projects Section */
@@ -515,6 +515,10 @@ footer {
 
     .hamburger {
         display: flex;
+    }
+
+    #about-section {
+        width: 80%;
     }
 
     .experience {

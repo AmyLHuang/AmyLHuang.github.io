@@ -1,81 +1,16 @@
 <h2>Python</h2>
 
-<h3>Libraries/Packages</h3>
+<h3>Libraries/Packages for Data Analysis</h3>
 <ul>
-    <li><strong>matplotlib</strong>: A library for creating static, animated, and interactive visualizations.</li>
-    <li><strong>Seaborn</strong>: A visualization library based on Matplotlib that provides a simpler interface for
-        working with common plots and graphs.</li>
-    <li><strong>NumPy (Numerical Python)</strong>: Contains multidimensional array and matrix data structures and
+    <li><strong><a href="https://numpy.org/doc/stable/user/index.html#user" target="_blank">NumPy</a> (Numerical Python)</strong>: Contains multidimensional array and matrix data structures and
         functions to manipulate them.</li>
-    <li><strong>pandas (Python Data Analysis)</strong>: Built on top of NumPy, used to manipulate and analyze tabular
+    <li><strong><a href="https://pandas.pydata.org/docs/user_guide/index.html" target="_blank">pandas</a> (Python Data Analysis)</strong>: Built on top of NumPy, used to manipulate and analyze tabular
         data.</li>
-    <li><strong>scikit-learn</strong></li>
-    <li><strong>statsmodels</strong>, <strong>math</strong>, <strong>random</strong></li>
-</ul>
-
-<hr>
-
-<h3>NumPy</h3>
-<pre><code>import numpy as np</code></pre>
-<p>Vectorization enables operations to be performed on multiple components of a data object at the same time.</p>
-<u>n-dimensional Arrays</u>
-<p>
-    Ndarrays are the core structure in NumPy. Elements can be changed by indexing and replacing values,
-    but arrays cannot be lengthened or shortened since they allocate a contiguous memory block.
-</p>
-<u>Initialization</u>
-<ul>
-    <li><code>np.array(list)</code> — creates an ndarray</li>
-    <li><code>np.zeros((dim1, dim2, ...))</code> — array filled with zeros</li>
-    <li><code>np.ones((dim1, dim2, ...))</code> — array filled with ones</li>
-    <li><code>np.full((dim1, dim2, ...), value)</code> — array filled with a specific value</li>
-    <li><code>np.min(ndarray)</code>, <code>np.max(ndarray)</code>, <code>np.median(ndarray)</code>, <code>np.std(ndarray)</code>, <code>np.mean(ndarray)</code></li>
-</ul>
-<u>Methods</u>
-<ul>
-    <li><code>ndarray.flatten()</code></li>
-    <li><code>ndarray.reshape(dim1, dim2, ...)</code></li>
-    <li><code>ndarray.tolist()</code></li>
-</ul>
-<u>Attributes</u>
-<ul>
-    <li><code>ndarray.shape</code> — dimensions of the array</li>
-    <li><code>ndarray.dtype</code> — data type</li>
-    <li><code>ndarray.size</code> — total number of elements</li>
-    <li><code>ndarray.T</code> — transposed array</li>
-</ul>
-
-<hr>
-
-<h3>pandas</h3>
-<pre><code>import pandas as pd</code></pre>
-<p>pandas has two core objects: <strong>DataFrame</strong> (A 2D labeled data structure with rows and columns) and <strong>Series</strong> (A 1D labeled array).</p>
-<u>Methods</u>
-<ul>
-    <li><code>pd.read_csv(source)</code> — load a CSV file</li>
-    <li><code>dataframe.head(num_rows)</code></li>
-    <li><code>dataframe[col].mean(), dataframe[col].max(), ...</code></li>
-    <li><code>dataframe.describe()</code></li>
-    <li><code>dataframe.info()</code></li>
-    <li><code>dataframe.value_counts()</code></li>
-    <li><code>dataframe[conditions]</code> — aka Boolean Masking</li>
-    <li><code>dataframe.iloc[row_idx, col_idx]</code></li>
-    <li><code>dataframe.loc[row_selector(s), col_name(s)]</code></li>
-    <li><code>dataframe[col_name]</code>, <code>dataframe[[col1, col2, ...]]</code></li>
-</ul>
-<u>Attributes</u>
-<ul>
-    <li><code>dataframe.columns</code></li>
-    <li><code>dataframe.shape</code></li>
-    <li><code>dataframe.info</code></li>
-</ul>
-<u>Grouping and Aggregation</u>
-<ul>
-    <li><strong>groupby()</strong>: A DataFrame method that gr oups rows of the dataframe together based on their values at one or more columns, which allows further analysis of the groups. For example: dataframe.groupby([col1, col2, ...]).sum(numeric_only=True)</li>
-    <li><strong>agg()</strong>: A groupby method that allows you to apply multiple calculations to groups of data. For example: dataframe.groupby([col1, col2, ...]).agg(['mean', 'median'])</li>
-</ul>
-<u>Merging and Joining Data</u>
-<ul>
-    <li><strong>pd.merge(df1, df2, on='key', how=['inner'|'outer'|'left'|'right'])</strong>: A pandas function that joins two dataframes together; it only combines data by extending along axis one horizonally.</li>
-    <li><strong>pd.concat([df1, df2, ...], axis=[0|1])</strong>: A pandas function that combines data either by adding it horizontally as new columsn for existing rows, or vertically as new rows for existing columns. Use the df.reset_index(drop=True) method to reset the indices.</li>
+    <li><strong><a href="https://matplotlib.org/stable/users/index.html" target="_blank">matplotlib</a></strong>: A library for creating
+        static, animated, and interactive visualizations.</li>
+    <li><strong><a href="https://seaborn.pydata.org/api.html" target="_blank">seaborn</a></strong>: A visualization library based on
+        Matplotlib that provides a simpler interface for
+        working with common plots and graphs.</li>
+    <li><strong><a href="https://scikit-learn.org/stable/user_guide.html" target="_blank">scikit-learn</a></strong></li>
+    <li><strong><a href="https://docs.python.org/3/library/math.html" target="_blank">math</a></strong>, <strong><a href="https://docs.python.org/3/library/random.html" target="_blank">random</a></strong></li>
 </ul>

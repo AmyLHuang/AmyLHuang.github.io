@@ -1,4 +1,5 @@
-// Create particle effect
+/* Create particle effect */
+
 const particlesContainer = document.getElementById('particles-container');
 
 document.addEventListener('mousemove', (e) => {
@@ -37,7 +38,7 @@ document.addEventListener('mousemove', (e) => {
 });
 
 
-//  For dropdown menu
+/* For dropdown menu */
 
 const dropdown = document.getElementById("dropdown");
 const hamburger = document.getElementById("hamburger");
@@ -62,7 +63,6 @@ window.addEventListener("resize", () => {
         dropdown.classList.remove("show");
         hamburger.classList.remove("active");
     }
-
 });
 
 // Close menu when clicking outside
@@ -77,7 +77,7 @@ window.addEventListener("resize", () => {
 });
 
 
-// Dark / Light Mode Toggle
+/* Dark / Light Mode Toggle */
 
 const modeButtons = document.querySelectorAll(".mode-toggle");
 

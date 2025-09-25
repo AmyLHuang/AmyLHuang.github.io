@@ -13,8 +13,8 @@
         <div id="tabs">
             <div class="active" onclick="loadNotes('ai', this)">AI</div>
             <div onclick="loadNotes('data', this)">Data Analysis</div>
-            <div onclick="loadNotes('bi', this)">BI</div>
             <div onclick="loadNotes('python', this)">Python</div>
+            <div onclick="loadNotes('bi', this)">BI</div>
             <div onclick="loadNotes('coop', this)">COOP</div>
             <div onclick="loadNotes('projects', this)">Projects</div>
             <div onclick="loadNotes('other', this)">Other</div>
@@ -60,15 +60,35 @@
             document.getElementById('toc').innerHTML = tocHTML;
         }
 
+        // Dark and light mode
+        const modeButtons = document.querySelectorAll(".mode-toggle");
+
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+
+        const initialIcon = document.body.classList.contains("dark") ? "🌙" : "☀️";
+        modeButtons.forEach(btn => btn.textContent = initialIcon);
+
         function toggleMode() {
             document.body.classList.toggle("dark");
-            const btn = document.getElementById("mode-toggle");
+
+            // Update icon
+            const icon = document.body.classList.contains("dark") ? "🌙" : "☀️";
+            modeButtons.forEach(btn => btn.textContent = icon);
+
+            // Save preference
             if (document.body.classList.contains("dark")) {
-                btn.textContent = "🌙";
+                localStorage.setItem("theme", "dark");
             } else {
-                btn.textContent = "☀️";
+                localStorage.setItem("theme", "light");
             }
         }
+
+            modeButtons.forEach(btn => btn.addEventListener("click", toggleMode));
 
         // Load default (AI) on page load
         window.onload = () => loadNotes('ai', document.querySelector('#tabs div'));
