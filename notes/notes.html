@@ -11,10 +11,10 @@
     <!-- Top bar with tabs + mode toggle -->
     <div id="topbar">
         <div id="tabs">
-            <div class="active" onclick="loadNotes('ai', this)">AI</div>
-            <div onclick="loadNotes('data', this)">Data</div>
+            <div class="active" onclick="loadNotes('data', this)">Data</div>
             <div onclick="loadNotes('bi', this)">BI</div>
             <div onclick="loadNotes('python', this)">Python</div>
+            <div onclick="loadNotes('ai', this)">AI</div>
             <div onclick="loadNotes('coop', this)">COOP</div>
             <div onclick="loadNotes('projects', this)">Projects</div>
             <div onclick="loadNotes('other', this)">Other</div>
@@ -91,7 +91,7 @@
             modeButtons.forEach(btn => btn.addEventListener("click", toggleMode));
 
         // Load default (AI) on page load
-        window.onload = () => loadNotes('ai', document.querySelector('#tabs div'));
+        window.onload = () => loadNotes('data', document.querySelector('#tabs div'));
     </script>
 </body>
 
