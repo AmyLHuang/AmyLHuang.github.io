@@ -157,3 +157,28 @@ body {
         flex-direction: column;
     }
 }
+
+/* Print */
+#print-btn {
+    margin-left: auto;
+    background: var(--accent, #0077cc);
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#print-btn:hover {
+    background: var(--accent-hover, #005fa3);
+}
+
+/* Hide print button during printing */
+@media print {
+    #print-btn,
+    #topbar,
+    #toc {
+        display: none !important;
+    }
+}

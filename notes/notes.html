@@ -15,6 +15,7 @@
             <div onclick="loadNotes('bi', this)">BI</div>
             <div onclick="loadNotes('python', this)">Python</div>
             <div onclick="loadNotes('ai', this)">AI</div>
+            <div onclick="loadNotes('stats', this)">Stats</div>
             <div onclick="loadNotes('coop', this)">COOP</div>
             <div onclick="loadNotes('projects', this)">Projects</div>
             <div onclick="loadNotes('other', this)">Other</div>
@@ -26,6 +27,7 @@
     <div id="main">
         <div id="toc"></div>
         <div id="notes-container">
+            <button id="print-btn" onclick="printNotes()">🖨️ Print</button>
             <div id="notes"></div>
         </div>
     </div>
@@ -59,6 +61,19 @@
             tocHTML += "</ul>";
             document.getElementById('toc').innerHTML = tocHTML;
         }
+
+        function printNotes() {
+            const sectionToPrint = document.getElementById('notes');
+            if (sectionToPrint) {
+                const originalContents = document.body.innerHTML; // Store original body content
+                document.body.innerHTML = sectionToPrint.innerHTML; // Replace body with section content
+                window.print(); // Trigger the print dialog
+                document.body.innerHTML = originalContents; // Restore original body content
+            } else {
+                console.error("Section with ID '" + sectionId + "' not found.");
+            }
+        }
+
 
         // Dark and light mode
         const modeButtons = document.querySelectorAll(".mode-toggle");
