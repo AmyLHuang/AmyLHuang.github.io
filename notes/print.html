@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="notes.css">
     <link rel="icon" href="../static/images/favicon.png">
-    <title>Print Notes</title>
+    <title>Print Preview</title>
+    <style>
+        #print-body {
+            /* margin-top: 2rem;
+            margin-right: 2rem; */
+            background-color: #ffffff;
+        }
+    </style>
 </head>
-
 <body id="print-body">
-    <button id="print-btn" onclick="window.print()">🖨️ Print</button>
-    <div id="notes-content"></div>
-
+    <div id="content"></div>
     <script>
-        const params = new URLSearchParams(window.location.search);
-        const html = decodeURIComponent(params.get('content') || '');
-        document.getElementById('notes-content').innerHTML = html;
+        window.opener.postMessage('ready-for-content', '*');
+
+        window.addEventListener('message', (event) => {
+            if (event.data.type === 'loadNotes') {
+                document.getElementById('content').innerHTML = event.data.html;
+                window.print();
+            }
+        });
     </script>
 </body>
-
 </html>

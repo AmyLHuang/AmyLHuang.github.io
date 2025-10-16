@@ -48,7 +48,6 @@
             }
         }
 
-
         function generateTOC() {
             const notes = document.getElementById('notes');
             const headers = notes.querySelectorAll('h2, h3');
@@ -64,13 +63,18 @@
 
         function openPrintableNotes() {
             const section = document.getElementById('notes');
-            if (!section) {
-                alert("Couldn't find notes section.");
-                return;
-            }
+            if (!section) return alert("Couldn't find notes section.");
 
-            const html = encodeURIComponent(section.innerHTML);
-            window.open(`print.html?content=${html}`, '_blank');
+            const printWindow = window.open('print.html', '_blank');
+            const html = section.innerHTML;
+
+            // Wait for the new window to load, then send data
+            window.addEventListener('message', function handler(e) {
+                if (e.data === 'ready-for-content') {
+                    printWindow.postMessage({ type: 'loadNotes', html }, '*');
+                    window.removeEventListener('message', handler);
+                }
+            });
         }
 
         // Dark and light mode
