@@ -159,8 +159,14 @@ body {
 }
 
 /* Print */
+#print-body {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
 #print-btn {
-    margin-left: auto;
+    align-self: center;
+    width: fit-content;
     background: var(--accent, #0077cc);
     color: white;
     border: none;
@@ -176,6 +182,7 @@ body {
 
 /* Hide print button during printing */
 @media print {
+
     #print-btn,
     #topbar,
     #toc {

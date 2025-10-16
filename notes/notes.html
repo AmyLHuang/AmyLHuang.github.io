@@ -27,7 +27,7 @@
     <div id="main">
         <div id="toc"></div>
         <div id="notes-container">
-            <button id="print-btn" onclick="printNotes()">🖨️ Print</button>
+            <button id="print-btn" onclick="openPrintableNotes()">🖨️ Print Preview</button>
             <div id="notes"></div>
         </div>
     </div>
@@ -62,18 +62,16 @@
             document.getElementById('toc').innerHTML = tocHTML;
         }
 
-        function printNotes() {
-            const sectionToPrint = document.getElementById('notes');
-            if (sectionToPrint) {
-                const originalContents = document.body.innerHTML; // Store original body content
-                document.body.innerHTML = sectionToPrint.innerHTML; // Replace body with section content
-                window.print(); // Trigger the print dialog
-                document.body.innerHTML = originalContents; // Restore original body content
-            } else {
-                console.error("Section with ID '" + sectionId + "' not found.");
+        function openPrintableNotes() {
+            const section = document.getElementById('notes');
+            if (!section) {
+                alert("Couldn't find notes section.");
+                return;
             }
-        }
 
+            const html = encodeURIComponent(section.innerHTML);
+            window.open(`print.html?content=${html}`, '_blank');
+        }
 
         // Dark and light mode
         const modeButtons = document.querySelectorAll(".mode-toggle");
