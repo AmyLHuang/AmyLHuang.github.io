@@ -67,4 +67,40 @@
 <hr>
 
 <h3>SQL</h3>
+<p>SQL lets you <strong>access and manipulate databases</strong>. It became a standard of the ANSI/ISO in the 1980s. <strong>RDBMS</strong> is the basis for SQL and all modern database systems. The <strong>data</strong> is stored in <strong>tables</strong>.</p>
+<p>Important Commands:</p>
+<ul>
+    <li>SELECT, INSERT INTO, UPDATE, DELETE</li>
+    <li>CREATE DATABASE, ALTER DATABASE</li>
+    <li>CREATE TABLE, ALTER TABLE, DROP TABLE</li>
+    <li>CREATE INDEX, DROP INDEX</li>
+</ul>
+<u>Syntax for SELECT</u>
+<p>
+    SELECT column_name(s)<br>
+    FROM table_name<br>
+    WHERE condition(s) -- Note: AND, OR, NOT operators<br>
+    GROUP BY column_name(s)<br>
+    HAVING condition(s) /* Note: WHERE clause filters rows, HAVING clause filters groups */<br>
+    ORDER BY column_name(s) ASC|DESC<br>
+    LIMIT #;
+</p>
+<p><strong>Operators:</strong> IS NULL, IS NOT NULL, AS, DISTINCT, LIKE, IN, BETWEEN</p>
+<u>Syntax for INSERT INTO</u>
+<p>
+    INSERT INTO table_name (column1, column2, column3, …)<br>
+    VALUES (value1, value2, value3, …);<br>
+    <br>
+    INSERT INTO table_name (column1, column2, column3, …)<br>
+    VALUES<br>
+    (value1, value2, value3, …),<br>
+    (value1, value2, value3, …),<br>
+    (value1, value2, value3, …), …;
+</p>
+<u>Syntax for UPDATE</u>
+<p>
+    UPDATE table_name<br>
+    SET column1 = value1, column2 = value2, …<br>
+    [WHERE condition];<br>
+</p>
 

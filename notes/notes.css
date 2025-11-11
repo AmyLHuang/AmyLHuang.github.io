@@ -30,6 +30,13 @@ body {
     transition: background 0.3s, color 0.3s;
 }
 
+/* img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+} */
+
 /* Top nav (tabs + toggle) */
 #topbar {
     display: flex;

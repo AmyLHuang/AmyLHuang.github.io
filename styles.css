@@ -75,6 +75,11 @@ a {
   transform: translateY(-3px);
 }
 
+.disabled {
+  pointer-events: none;
+  background: lightslategray;
+}
+
 /* Top Nav */
 
 .navbar {
@@ -406,6 +411,10 @@ a {
 
 #proj-6 {
   box-shadow: 2px 4px 12px rgba(0, 255, 221, 0.5);
+}
+
+#proj-7 {
+  box-shadow: 2px 4px 12px rgba(0, 26, 255, 0.718);
 }
 
 .proj-img-container {
