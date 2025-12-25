@@ -1,281 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <link rel="icon" href="static/images/favicon.png">
-    <title>Amy Huang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="Assets/profile-pic.png">
+    <title>Home</title>
 </head>
 <body>
-    <a class="skip-to-content-link" href="#main-content">Skip to content</a>
     <div id="particles-container"></div>
-    <nav class="navbar">
-        <!-- Left links -->
-        <div class="nav-left">
-            <a href="#intro-section">Amy Huang</a>
-        </div>
-    
-        <button class="mode-toggle">☀️</button>
-
-        <!-- Right links -->
-        <div class="nav-right">
-            <a href="#about-section">About</a>
-            <a href="#tech-stack-section">Tech Stack</a>
-            <a href="#projects-section">Projects</a>
-        </div>
-    
-        <!-- Hamburger icon -->
-        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+    <div id="hamburger"><i class="fa fa-bars"></i></div>
+    <nav id="sidebar">
+        <button id="sidebar-close-btn">X</i></button>
+        <img id="profile-pic" src="Assets/profile-pic.png"/>
+        <h2>Amy Huang</h2>
+        <ul id="sidebar-links">
+            <li><a id="active" href="index.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="projects.html"><i class="fa fa-home"></i>Projects</a></li>
+            <li><a href="certificates.html"><i class="fa fa-graduation-cap"></i>Certificates</a></li>
+            <li><a href="resume.html"><i class="fa fa-file-text"></i>Resume</a></li>
+        </ul>
     </nav>
-    
-    <!-- Dropdown for small screens -->
-    <div class="dropdown" id="dropdown">
-        <a href="#about-section">About</a>
-        <a href="#tech-stack-section">Tech Stack</a>
-        <a href="#projects-section">Projects</a>
-    </div>
-    <main class="main-content">
-        <section id="intro-section">
-            <h1>Hi, I'm <span class="orange-text">Amy Huang</span>. <br> Data Analyst and Web Developer.</h1>
-            <p>I am a software developer located in <i class="fa-solid fa-location-dot"></i>  California, USA.</p>
-            <div class="intro-btns">
-                <a class="button" href="https://www.linkedin.com/in/amyhuang19/" target="_blank"><i class="fa-solid fa-handshake"></i> Connect with me</a>
-                <a class="button" href="static/resumes/Resume_AmyLHuang.pdf" download><i class="fa-solid fa-download"></i> Download Resume</a>
-            </div>
-            
-        </section>
-        <hr class="divider">
-        <section id="about-section">
-            <h2>About Me</h2>
-            <hr class="line">
-            <div class=fakeMenu>
-                <div class="fakeButtons fakeClose"></div>
-                <div class="fakeButtons fakeMinimize"></div>
-                <div class="fakeButtons fakeZoom"></div>
-            </div>
-            <div class="fakeScreen">
-                <p>> self.name</p>
-                <p>&nbsp;&nbsp;&nbsp; Amy Huang</p>
-                <p>> self.location</p>
-                <p>&nbsp;&nbsp;&nbsp; Orange County, California, USA</p>
-                <p>> self.education</p>
-                <p>&nbsp;&nbsp;&nbsp; 1. UC Irvine, Class of 2024, B.S. Computer Science<br>2. Data Analytics Fellowship @ COOP Careers</p>
-                <!-- <p>> self.hobbies</p>
-                <p>&nbsp;&nbsp;&nbsp; Watch YouTube, Play Badminton, Listen to Music</p> -->
-                <p>> self.resume</p>
-                <p>&nbsp;&nbsp;&nbsp; [<a href="static/resumes/Resume_AmyLHuang.pdf"><span class="link-icon">🔗</span>Main</a>]</p>
-                <p>> self.certificates</p>
-                <p>&nbsp;&nbsp;&nbsp; [<a href="https://www.credly.com/badges/a6f87137-3e83-4c6b-bd7c-b0741b76e3b2/public_url"><span class="link-icon">🔗</span>Google AI Essentials V1</a>, <a href="https://www.credly.com/badges/694b0f26-f660-40e2-b0db-3efad682e442/public_url"><span class="link-icon">🔗</span>SAS:Essentials 1</a>, <a href="static/certificates/certificate-advanced-software-engineering-codepath.pdf"><span class="link-icon">🔗</span>Codepath Advanced Software Engineering</a>]</p>
-                <p>> </p>
-            </div>
-        </section>
-        <section id="tech-stack-section">
-            <h2>Tech Stack</h2>
-            <hr class="line">
-            <div class="techs">
-                <div>
-                    <img src="https://img.icons8.com/?size=40&id=13441&format=png&color=000000" alt="Python logo">
-                    <p>Python</p>
-                </div>
-                <div>
-                    <img src="https://img.icons8.com/?size=40&id=1476&format=png&color=cccccc" alt="SQL logo">
-                    <p>SQL</p>
-                </div>
-                <div>
-                    <img src="https://img.icons8.com/?size=40&id=qYfwpsRXEcpc&format=png&color=000000" alt="Power BI logo">
-                    <p>Power BI</p>
-                </div>
-                <div>
-                    <img src="https://img.icons8.com/?size=40&id=9Kvi1p1F0tUo&format=png&color=000000" alt="Tableau logo">
-                    <p>Tableau</p>
-                </div>
-                <div>
-                    <img src="https://img.icons8.com/?size=40&id=117561&format=png&color=000000" alt="Microsoft Excel Logo">
-                    <p>Excel</p>
-                </div>
-                <div>
-                    <img src="https://img.icons8.com/?size=40&id=6yIWVyFTE0no&format=png&color=000000" alt="Google Sheets Logo">
-                    <p>Sheets</p>
-                </div>
-                <div>
-                    <img src="https://img.icons8.com/?size=40&id=13679&format=png&color=000000" alt="Java logo">
-                    <p>Java</p>
-                </div>
-                <div>
-                    <img src="https://img.icons8.com/?size=40&id=20909&format=png&color=000000" alt="HTML logo">
-                    <p>HTML</p>
-                </div>
-                <div>
-                    <img src="https://img.icons8.com/?size=40&id=21278&format=png&color=000000" alt="CSS logo">
-                    <p>CSS</p>
-                </div>
-                <div>
-                    <img src="https://img.icons8.com/?size=40&id=108784&format=png&color=000000" alt="JavaScript logo">
-                    <p>JavaScript</p>
-                </div>
-                <div>
-                    <img src="https://img.icons8.com/?size=40&id=20906&format=png&color=000000" alt="Git logo">
-                    <p>Git</p>
-                </div>
-                <!-- <div>
-                            <img src="https://img.icons8.com/?size=40&id=40669&format=png&color=000000" alt="Cpp logo">
-                            <p>C++</p>
-                        </div> -->
-                <!-- <div>
-                            <img src="https://img.icons8.com/?size=40&id=123603&format=png&color=000000" alt="React Native logo">
-                            <p>React</p>
-                        </div> -->
-                <div>
-                    <img src="https://img.icons8.com/?size=40&id=62452&format=png&color=000000" alt="Firebase logo">
-                    <p>Firebase</p>
-                </div>
-                <div>
-                    <img src="https://img.icons8.com/?size=40&id=bosfpvRzNOG8&format=png&color=000000" alt="MongoDB logo">
-                    <p>MongoDB</p>
-                </div>
-            </div>
-        </section>
-        <!-- <section id="work-experience-section">
-            <h2>Work Experience</h2>
-            <hr class="line">
-            <div class="experience">
-                <img src="static/images/work/tcs-logo.png" alt="work tcs logo">
-                <div class="experience-info">
-                    <h3>Tata Consultancy Services (TCS)</h3>
-                    <p>Software Developer Intern</p>
-                    <p>Jan 2024 - June 2024 (6 months)</p>
-                    <ul>
-                        <li>Implemented a multi-agent framework to mitigate bias in large language models (LLMs) during synthetic data generation</li>
-                        <li>Enhanced and extended a Chat UI from Hugging Face, integrating advanced AI capabilities for improved interaction</li>
-                        <li>Conducted comprehensive evaluations across multiple LLMs of varying scales, including Mistral 7B, Llama 2, GPT, and Claude 2, to assess performance and bias mitigation</li>
-                        <li>Managed backend operations using MongoDB, ensuring efficient data handling and storage</li>
-                        <li class="experience-link"><a href="static/images/work/tcs-poster.jpg">View Poster</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="experience">
-                <img src="static/images/work/uci-logo.png" alt="work uci logo">
-                <div class="experience-info">
-                    <h3>UC Irvine, Donald Bren School of Information & Computer Science</h3>
-                    <p>Information & Computer Science Tutor</p>
-                    <p>Oct 2023 - June 2024 (9 months)</p>
-                    <ul>
-                        <li>Coordinated with a supervisor and 11 other students to provide a free help center for undergrads who had any questions on course material</li>
-                        <li>Beta tested the program, covered 10 courses, supported 100+ students, and the program remains active</li>
-                    </ul>
-                </div>
-            </div>
-        </section> -->
-        <section id="projects-section">
-            <h2>Projects</h2>
-            <hr class="line">
-            <div class="projects">
-                <div class="project" id="proj-1">
-                    <h3>MyPortfolio</h3>
-                    <div class="proj-img-container">
-                        <img src="static/images/projects/Portfolio/portfolio_home-v5.png" alt="project Portfolio home page">
-                    </div>
-                    <!-- <p>Web application where users can showcase their work experience and projects. It is created purely on HTML, CSS, and JavaScript.</p> -->
-                    <div class="project-links">
-                        <a class="button" href="case_studies/MyPortfolio.html"><i class="fa-solid fa-pen"></i> Case Study</a>
-                        <a class="button" href="https://github.com/AmyLHuang/AmyLHuang.github.io" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-                    </div>
-                </div>
-                <div class="project" id="proj-2">
-                    <h3>Power BI Dashboards</h3>
-                    <div class="proj-img-container">
-                        <img src="static/images/projects/PowerBI/cookies_sold.png" alt="A PowerBI Dashboard Example">
-                    </div>
-                    <!-- <p>Dashboards created in Power BI Desktop.</p> -->
-                    <div class="project-links">
-                        <a class="button" href="case_studies/PowerBI.html"><i class="fa-solid fa-pen"></i> Case Study</a>
-                    </div>
-                </div>
-                
-                <div class="project" id="proj-3">
-                    <h3>MovieShop</h3>
-                    <div class="proj-img-container">
-                        <img src="static/images/projects/MovieShop/genre-page.png" alt="project MovieShop genre page">
-                    </div>
-                    <!-- <p>Web application where users can browse and shop for movies. The main functionality is maintained by Java Servlets and all the data is stored in a SQL database.</p> -->
-                    <div class="project-links">
-                        <a class="button" href="case_studies/MovieShop.html"><i class="fa-solid fa-pen"></i> Case Study</a>
-                        <a class="button" href="https://github.com/AmyLHuang/MovieShop" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-                    </div>
-                </div>
-                <div class="project" id="proj-4">
-                    <h3>Health2O</h3>
-                    <div class="proj-img-container">
-                        <img src="static/images/projects/Health2O/logo.png" alt="project Health2O logo">
-                        <img src="static/images/projects/Health2O/home-page.png" alt="project Health2O home page">
-                    </div>
-                <!-- <p>Mobile application used to improve the user's fitness habits. It focuses on 3 key areas: sleep, exercise, and hydration.</p> -->
-                    <div class="project-links">
-                        <a class="button" href="case_studies/Health2O.html"><i class="fa-solid fa-pen"></i> Case Study</a>
-                        <a class="button" href="https://github.com/AmyLHuang/Health2O" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-                    </div>
-                </div>
-                <div class="project" id="proj-5">
-                    <h3>Stock Trading Bot</h3>
-                    <div class="proj-img-container">
-                        <img src="static/images/projects/StockTradingBot/ensemble_model.png" alt="project Stock Trading Bot result chart">
-                    </div>
-                <!-- <p>Using historical data to predict future stock prices</p> -->
-                    <div class="project-links">
-                        <a class="button" href="case_studies/StockTradingBot.html"><i class="fa-solid fa-pen"></i> Case Study</a>
-                        <a class="button" href="https://github.com/AmyLHuang/Stock-Trading-Bot" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-                    </div>
-                </div>
-                <div class="project" id="proj-6">
-                    <h3>Search Engine</h3>
-                    <div class="proj-img-container">
-                        <img src="static/images/projects/SearchEngine/home_page.png" alt="project Search Engine search UI home page">
-                    </div>
-                <!-- <p>Built a web crawler to index sites starting from uci.edu and a search engine to return relevant results based on user queries.</p> -->
-                    <div class="project-links">
-                        <a class="button" href="case_studies/SearchEngine.html"><i class="fa-solid fa-pen"></i> Case Study</a>
-                        <a class="button" href="https://github.com/AmyLHuang/SearchEngine" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-                    </div>
-                </div>
-                <div class="project" id="proj-7">
-                    <h3>Capstone @ TCS</h3>
-                    <div class="proj-img-container">
-                        <img src="static/images/work/tcs-poster.jpg" alt="project TCS poster">
-                    </div>
-                    <div class="project-links">
-                        <a class="button disabled" href=# disabled><i class="fa-solid fa-pen"></i> Case Study</a>
-                        <a class="button disabled" href=# target="_blank" disabled><i class="fa-brands fa-github"></i> GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- <section id="notes-section">
 
-        </section> -->
-        
-        <hr class="divider">
-        <section id="connect-section">
-            <h2>Connect</h2>
-            <hr class="line">
-            <div class="connect-section-links">
-                <a href="https://www.linkedin.com/in/amyhuang19/" target="_blank" title="LinkedIn: amyhuang19"> <i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/AmyLHuang/" target="_blank" title="GitHub: AmyLHuang"> <i class="fa-brands fa-square-github"></i></a>
-                <a href="mailto:amyhuang8119@gmail.com" target="_blank" title="Email: amyhuang8119@gmail.com"> <i class="fa fa-envelope-square"></i></a>
-            </div>
-        </section>
+    <main>
+        <div id="top"></div>
+        <h1>Amy Huang's Portfolio</h1>
+        <div id="main-content">
+            <section id="left-content">
+                <div class="info-container">
+                    <h2><i class="fa fa-user-o"></i> Profile</h2>
+                    <div class="info">
+                        <p class="question">Interests</p>
+                        <p class="answer">Data Management, Web Development</p>
+                        <p class="question">Email</p>
+                        <p class="answer">amyhuang8119@gmail.com</p>
+                        <p class="question">LinkedIn</p>
+                        <p class="answer"><a href="https://www.linkedin.com/in/amyhuang19/" target="_blank">linkedin.com/in/amyhuang19</a></p>
+                        <p class="question">Tableau Portfolio</p>
+                        <p class="answer"><a href="https://public.tableau.com/app/profile/amy.huang5098/vizzes" target="_blank">public.tableau.com/app/profile/amy.huang5098/vizzes</a></p>
+                        <p class="question">GitHub</p>
+                        <p class="answer"><a href="https://github.com/AmyLHuang" target="_blank">github.com/AmyLHuang</a></p>
+                        <p class="question">Location</p>
+                        <p class="answer"><i class="fa fa-map-marker" style="margin-right: 4px;"></i>Orange County, CA, USA</p>
+                    </div>
+                </div>
+                <div class="info-container">
+                    <h2><i class="fa fa-graduation-cap"></i> Education</h2>
+                    <div class="info">
+                        <p class="question">Major </p>
+                        <p class="answer">Master of Computer Science</p>
+                        <p class="question">Institution </p>
+                        <p class="answer">Georgia Tech</p>
+                        <p class="question">Specialization </p>
+                        <p class="answer">In Progress</p>
+                        <p class="question">Graduation Date </p>
+                        <p class="answer">In Progress</p>
+                    </div>
+                    <br>
+                    <hr style="border: 2px solid darkgray;">
+                    <br>
+                    <div class="info">
+                        <p class="question">Institution </p>
+                        <p class="answer">COOP Careers Fellowship</p>
+                        <p class="question">Track </p>
+                        <p class="answer">Data Analytics</p>
+                        <p class="question">Completion Date </p>
+                        <p class="answer">December 2025</p>
+                    </div>
+                    <br>
+                    <hr style="border: 2px solid darkgray;">
+                    <br>
+                    <div class="info">
+                        <p class="question">Major </p>
+                        <p class="answer">Computer Science, B.S.</p>
+                        <p class="question">Institution </p>
+                        <p class="answer">University of California, Irvine</p>
+                        <p class="question">Specialization </p>
+                        <p class="answer">Intelligent Systems</p>
+                        <p class="question">Graduation Date </p>
+                        <p class="answer">June 2024</p>
+                        <p class="question">Cumulative GPA </p>
+                        <p class="answer">3.86 / 4.00</p>
+                    </div>
+                </div>
+            </section>
+            <section id="right-content">
+                <p id="right-title">Current Projects / Activities</p>
+                <br>
+                <p>COOP Alumni Program</p>
+                <br>
+                <p>Master's Program</p>
+                <br>
+                <p>Hospital Data Visualization Project</p>
+            </section>
+        </div>
+        <footer>
+            © 2025 Amy Huang. All rights reserved.
+        </footer>
     </main>
-    <footer>
-        Tech Stack Icons by <a href="https://icons8.com/">Icons8</a>.<br>
-        © 2025 Amy Huang. All rights reserved.<br>
-        <!-- <a id="notes-link" href="./notes/notes.html">Notes</a> -->
-    </footer>
 
     <script src="script.js"></script>
 </body>

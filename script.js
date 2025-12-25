@@ -1,3 +1,30 @@
+// Get the hamburger icon and sidebar elements
+const hamburger = document.getElementById('hamburger');
+const sidebar = document.getElementById('sidebar');
+const closeBtn = document.getElementById('sidebar-close-btn');
+
+// Add event listener for the hamburger icon to open the sidebar
+hamburger.addEventListener('click', () => {
+    sidebar.classList.add('active');  // Add 'active' class to open sidebar
+});
+
+// Add event listener for the close button to close the sidebar
+closeBtn.addEventListener('click', () => {
+    sidebar.classList.remove('active');  // Remove 'active' class to close sidebar
+});
+
+// Close sidebar when clicking outside
+ document.addEventListener("click", (e) => {
+    if (
+        !sidebar.contains(e.target) && 
+        !hamburger.contains(e.target)
+    ) {
+        sidebar.classList.remove("active");
+    }
+});
+
+
+
 /* Create particle effect */
 
 const particlesContainer = document.getElementById('particles-container');
@@ -33,78 +60,6 @@ document.addEventListener('mousemove', (e) => {
         // Remove after animation
         setTimeout(() => {
             particle.remove();
-        }, 2000);
+        }, 1000);
     }, 10);
 });
-
-
-/* For dropdown menu */
-
-const dropdown = document.getElementById("dropdown");
-const hamburger = document.getElementById("hamburger");
-const links = document.querySelectorAll(".nav-left a, .dropdown a");
-
-function toggleMenu() {
-    dropdown.classList.toggle("show");
-    hamburger.classList.toggle("active");
-}
-
-// Close menu when a link is clicked
-links.forEach(link => {
-    link.addEventListener("click", () => {
-        dropdown.classList.remove("show");
-        hamburger.classList.remove("active");
-    });
-});
-
-// Close menu when screen is resized wider than 900px
-window.addEventListener("resize", () => {
-    if (window.innerWidth > 900) {
-        dropdown.classList.remove("show");
-        hamburger.classList.remove("active");
-    }
-});
-
-// Close menu when clicking outside
- document.addEventListener("click", (e) => {
-    if (
-        !dropdown.contains(e.target) && 
-        !hamburger.contains(e.target)
-    ) {
-        dropdown.classList.remove("show");
-        hamburger.classList.remove("active");
-    }
-});
-
-
-/* Dark / Light Mode Toggle */
-
-const modeButtons = document.querySelectorAll(".mode-toggle");
-
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "dark") {
-    document.body.classList.add("dark");
-} else {
-    document.body.classList.remove("dark");
-}
-
-const initialIcon = document.body.classList.contains("dark") ? "🌙" : "☀️";
-modeButtons.forEach(btn => btn.textContent = initialIcon);
-
-function toggleMode() {
-    document.body.classList.toggle("dark");
-    
-    // Update icon
-    const icon = document.body.classList.contains("dark") ? "🌙" : "☀️";
-    modeButtons.forEach(btn => btn.textContent = icon);
-    
-    // Save preference
-    if (document.body.classList.contains("dark")) {
-        localStorage.setItem("theme", "dark");
-    } else {
-        localStorage.setItem("theme", "light");
-    }
-}
-
-modeButtons.forEach(btn => btn.addEventListener("click", toggleMode));
-

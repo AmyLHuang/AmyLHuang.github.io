@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../Assets/profile-pic.png">
+    <title>Multi-Agent GenAI</title>
+</head>
+
+<body>
+    <div id="hamburger"><i class="fa fa-bars"></i></div>
+    <nav id="sidebar">
+        <button id="sidebar-close-btn">X</i></button>
+        <img id="profile-pic" src="../Assets/profile-pic.png" />
+        <h2>Amy Huang</h2>
+        <ul id="sidebar-links">
+            <li><a href="../index.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a id="active" href="../projects.html"><i class="fa fa-home"></i>Projects</a></li>
+            <li><a href="../certificates.html"><i class="fa fa-graduation-cap"></i>Certificates</a></li>
+            <li><a href="../resume.html"><i class="fa fa-file-text"></i>Resume</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="top"></div>
+
+        <section class="case-study-header">
+            <h1>Multi-Agent GenAI</h1>
+            <p class="subtitle">GenAI | Multi-Agent | Capstone Project | Tata Consultancy Services</p>
+            <a href="https://github.com/wfigura/TCS-Synthetic-Data-Capstone-Project" target="_blank" class="button">View on GitHub</a>
+        </section>
+
+        <section class="case-study-content">
+            <div class="introduction">
+                <h2>Introduction</h2>
+                <p>The current landscape for synthetic data generation primarily relies on domain-specific algorithms and generative
+                adversarial networks (GANs) or large language models to produce data, namely formatted text and tabular data, that
+                mimics real-world distributions. While effective in certain contexts, these solutions often face challenges in
+                generating complex, multi-modal data and ensuring minimal data hallucination, which will create non-realistic or
+                implausible data points that compromise the data quality.</p>
+            </div>
+            <div class="goal">
+                <h2>Goal</h2>
+                <p>Our project introduces a reinvention using a multi-agent network large language model (MA-LLM) framework designed to
+                address these limitations. This approach enables generating high-quality, cross-modality synthetic data with greater
+                adherence to real-world distributions and contexts while providing maximized efficiency. By integrating multi-agent
+                specialized in different data modalities, our platform significantly reduces the occurrence of hallucinations, ensuring
+                that the generated synthetic data is both realistic and diverse.</p>
+            </div>
+            <div class="features">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Multi-Agent System (MAS) LLM Data Synthesis model</li>
+                    <li>Generate data while mitigating bias</li>
+                    <li>LLM pair: (1) Supervisor LLM to detect bias, (2) Generation LLM to generate content</li>
+                    <li>Web Service UI adopted from HuggingFace ChatUI</li>
+                </ul>
+            </div>
+            <div class="technologies">
+                <h2>Technologies Used</h2>
+                <p>LLMs, AI Models (e.g., claude-2.1, gpt-4, mistral-7b), HuggingFace, MongoDB, TypeScript, Svelte, HTML, CSS, Dockerfile, Shell</p>
+            </div>
+            <div class="gallery">
+                <h2>Gallery</h2>
+                <p>Poster</p>
+                <img src="../Assets/Projects/Multi-Agent_GenAI_Poster.jpg" alt="TCS Poster" class="gallery-img">
+            </div>
+        </section>
+
+        <footer>
+            © 2025 Amy Huang. All rights reserved.
+        </footer>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

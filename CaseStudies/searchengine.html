@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../Assets/profile-pic.png">
+    <title>Search Engine</title>
+</head>
+<body>
+    <div id="hamburger"><i class="fa fa-bars"></i></div>
+    <nav id="sidebar">
+        <button id="sidebar-close-btn">X</i></button>
+        <img id="profile-pic" src="../Assets/profile-pic.png" />
+        <h2>Amy Huang</h2>
+        <ul id="sidebar-links">
+            <li><a href="../index.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a id="active" href="../projects.html"><i class="fa fa-home"></i>Projects</a></li>
+            <li><a href="../certificates.html"><i class="fa fa-graduation-cap"></i>Certificates</a></li>
+            <li><a href="../resume.html"><i class="fa fa-file-text"></i>Resume</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="top"></div>
+
+        <section class="case-study-header">
+            <h1>Web Crawler + Search Engine</h1>
+            <p class="subtitle">Python Project | Web Scraping and Search Algorithm</p>
+            <a href="https://github.com/AmyLHuang/SearchEngine" target="_blank" class="button">View on GitHub</a>
+        </section>
+        
+        <section class="case-study-content">
+            <div class="introduction">
+                <h2>Introduction</h2>
+                <p>The Web Crawler + Search Engine is a Python-based project that automatically crawls the web, starting from
+                    the University of California, Irvine (uci.edu), and follows links to index pages. This program is designed
+                    to gather web data, build an index, and allow users to search for specific content across the collected
+                    pages.</p>
+            </div>
+            <div class="goal">
+                <h2>Goal</h2>
+                <p>This project utilizes a depth-first search strategy to crawl the web starting from a specified URL (uci.edu).
+                    The crawler collects page content and creates a simple search engine by indexing the text on the pages. The
+                    search functionality is based on keyword matching, allowing users to search for specific terms across the
+                    indexed pages, with relevant results displayed in order of relevance.</p>
+            </div>
+            <div class="features">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Automated web crawling using a depth-first search algorithm</li>
+                    <li>Text indexing for efficient keyword-based searching</li>
+                    <li>Simple user interface for searching indexed pages</li>
+                    <li>Handles large volumes of pages without significant performance degradation</li>
+                    <li>Can be scaled to crawl additional domains beyond uci.edu</li>
+                </ul>
+            </div>
+            <div class="technologies">
+                <h2>Technologies Used</h2>
+                <p>Python, NLTK, BeautifulSoup, Requests, Regular Expressions, Flask (for search interface)</p>
+            </div>
+            <div class="gallery">
+                <h2>Gallery</h2>
+                <p>Home Page</p>
+                <img src="../Assets/Projects/SearchEngine_Home.png" alt="SearchEngine home page Screenshot"
+                    class="gallery-img">
+                <p>Results page</p>
+                <img src="../Assets/Projects/SearchEngine_Result.png" alt="SearchEngine results page Screenshot"
+                    class="gallery-img">
+            </div>
+        </section>
+
+        <footer>
+            © 2025 Amy Huang. All rights reserved.
+        </footer>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

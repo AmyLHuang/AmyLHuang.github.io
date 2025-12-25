@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../Assets/profile-pic.png">
+    <title>Stock Trading Bot</title>
+</head>
+
+<body>
+    <div id="hamburger"><i class="fa fa-bars"></i></div>
+    <nav id="sidebar">
+        <button id="sidebar-close-btn">X</i></button>
+        <img id="profile-pic" src="../Assets/profile-pic.png" />
+        <h2>Amy Huang</h2>
+        <ul id="sidebar-links">
+            <li><a href="../index.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a id="active" href="../projects.html"><i class="fa fa-home"></i>Projects</a></li>
+            <li><a href="../certificates.html"><i class="fa fa-graduation-cap"></i>Certificates</a></li>
+            <li><a href="../resume.html"><i class="fa fa-file-text"></i>Resume</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="top"></div>
+
+        <section class="case-study-header">
+            <h1>Stock Trading Bot</h1>
+            <p class="subtitle">Python Project | Stock Price Prediction and Trading Automation</p>
+            <a href="https://github.com/AmyLHuang/Stock-Trading-Bot" target="_blank" class="button">View on GitHub</a>
+        </section>
+        
+        <section class="case-study-content">
+        
+            <div class="introduction">
+                <h2>Introduction</h2>
+                <p>The Stock Trading Bot is a Python-based application that uses historical stock market data to predict future
+                    stock price movements, specifically focusing on companies within the S&P 500. The bot is capable of
+                    suggesting potential trades based on predicted price trends.</p>
+            </div>
+        
+            <section class="problem">
+                <h2>Problem</h2>
+                <p>Accurately predicting stock prices is a complex challenge due to market volatility, noise, and unpredictable
+                    external factors. Many beginner trading tools oversimplify the analysis, leading to poor trading decisions
+                    based on incomplete data.</p>
+            </section>
+        
+            <section class="goal">
+                <h2>Goal</h2>
+                <p>By utilizing historical stock data and applying predictive algorithms, the Stock Trading Bot aims to provide
+                    users with better-informed trading suggestions. It uses statistical analysis and machine learning techniques
+                    to detect patterns and make probabilistic forecasts about future price trends.</p>
+            </section>
+        
+            <section class="results">
+                <h2>Results</h2>
+                <p>Based on our findings, using temporal ensembles could potentially boost the trading bot's performance in
+                    certain situations. However, the agents don't consistently produce positive returns. There is possibility of
+                    negative returns and underperformance (which may be caused by the hyperparameters, the market conditions,
+                    and even the model itself) even though there were previous instances of positive returns.</p>
+            </section>
+        
+            <section class="features">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Collects and processes historical stock market data</li>
+                    <li>Implements predictive models to forecast future stock prices</li>
+                    <li>Generates buy/sell trading signals based on predicted trends</li>
+                    <li>Supports backtesting with historical data to validate model accuracy</li>
+                    <li>Modular design for easy adaptation to other stock indexes or assets</li>
+                </ul>
+            </section>
+        
+            <section class="technologies">
+                <h2>Technologies Used</h2>
+                <p>Python, Pandas, NumPy, Scikit-learn, Matplotlib, Yahoo Finance API</p>
+            </section>
+        
+            <section class="gallery">
+                <h2>Gallery</h2>
+                <p>In the following charts, the red dots indicate sell and the green dots indicate buy.</p>
+                <p>Ensembled Model</p>
+                <img src="../Assets/Projects/StockBot_Ensemble.png"
+                    alt="StockTradingBot ensemble model results Screenshot" class="gallery-img">
+                <!-- <p>Model1</p>
+                <img src="../static/images/projects/StockTradingBot/model1.png" alt="StockTradingBot model 1 results Screenshot"
+                    class="gallery-img">
+                <p>Model2</p>
+                <img src="../static/images/projects/StockTradingBot/model2.png" alt="StockTradingBot model 2 results Screenshot"
+                    class="gallery-img">
+                <p>Model3</p>
+                <img src="../static/images/projects/StockTradingBot/model3.png" alt="StockTradingBot model 3 results Screenshot"
+                    class="gallery-img">
+                <p>Random Actions (Baseline)</p>
+                <img src="../static/images/projects/StockTradingBot/random.png"
+                    alt="StockTradingBot random actions model results Screenshot" class="gallery-img">
+                <p>No Tuned Hyperparameters (Baseline)</p>
+                <img src="../static/images/projects/StockTradingBot/untuned.png"
+                    alt="StockTradingBot no tuned hyperparameters model results Screenshot" class="gallery-img"> -->
+            </section>
+        
+        </section>
+
+        <footer>
+            © 2025 Amy Huang. All rights reserved.
+        </footer>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
