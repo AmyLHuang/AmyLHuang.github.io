@@ -81,13 +81,15 @@ a {
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
     transition: left 0.5s ease-in-out;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
 }
 
 #profile-pic {
     display: block;
     height: 9em;
     margin: 0.5rem 0;
-    justify-self: center;
+    margin: 0 auto;
 }
 
 #sidebar h2 {
@@ -175,6 +177,7 @@ footer {
 #main-content {
     display: flex;
     flex-direction: row;
+    padding: 5px;
 }
 
 #left-content {
@@ -183,13 +186,13 @@ footer {
 
 #right-content {
     width: 25%;
-    padding: 1em 2em 2em 2em;
+    padding: 1em 2em 2em 0;
 }
 
 .info-container {
     background-color: #fff;
     border: 3px dotted var(--light-blue);
-    margin: 1em;
+    margin-bottom: 1em;
     padding: 1em;
     width: 85%;
     border-radius: 15px;
@@ -455,9 +458,9 @@ footer {
 }
 
 .underpage img {
-    height: 100%;
     width: auto;
     max-width: 200px;
+    max-height: 200px;
     margin-right: 10px;
 }
 
@@ -465,11 +468,16 @@ footer {
    resume.html 
  ----------------*/
 
+.pdf-container {
+    text-align: center; 
+    height: 100vh; 
+    margin-bottom: 10px;
+}
+
 iframe {
     width: 90%;
     height: 80vh; 
     border: none;
-    margin-bottom: 5rem;
 }
 
 /* ---------------

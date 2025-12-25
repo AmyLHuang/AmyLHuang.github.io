@@ -14,7 +14,7 @@ closeBtn.addEventListener('click', () => {
 });
 
 // Close sidebar when clicking outside
- document.addEventListener("click", (e) => {
+ document.addEventListener("pointerdown", (e) => {
     if (
         !sidebar.contains(e.target) && 
         !hamburger.contains(e.target)
